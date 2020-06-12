@@ -10,14 +10,17 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <!--Slider-->
+    <div class="container slide">
         <div class="slide">
             <div class="slide__img00"><img src="image.jpg" width="100%" height="300px" /></div>
             <div class="slide__img01"><img src="image.jpg" width="100%" height="300px" /></div>
@@ -26,7 +29,7 @@
             <div class="slide__img04"><img src="image.jpg" width="100%" height="300px" /></div>
         </div>
     </div>
-
+    <!--Script Slider-->
     <script type="text/javascript">
         $(document).ready(function() {
             $('.slide').slick({
@@ -37,6 +40,187 @@
         });
     </script>
 
+    <!--BXH&deXuat-->
+    <div class="container BXH&deXuat">
+        <div class="row BXH&deXuat">
+            <div class="col-md-7 BXH&deXuat">
+                <div class="BXH__chart">
+                    <canvas id="viChart" width="100%" height="80px"></canvas>
+                </div>
+                <div class="BXH__list">
+                    <ul class="list list-unstyled">
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>01</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="image.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>ERIK - <strong>Em Không Sai Chúng Ta Sai</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 6.85M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>02</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="image.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Bảo Yến Rosie, Great - <strong>Cướp Đi Cả Thế Giới</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 3.49M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>03</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="image.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Đình Dũng - <strong>Tình Anh</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 3.15M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>04</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="image.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Hòa Minzy, Mr.Siro - <strong>Không Thể Cùng Nhau Suốt Kiếp</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 1.31M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>05</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="image.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Lê Bảo Bình - <strong>Thích Thì Đến</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 1.04M</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5 BXH&deXuat">
+
+            </div>
+        </div>
+    </div>
+    <!--Script BXH&deXuat-->
+    <script>
+        var ctx = document.getElementById('viChart');
+        var viChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6'],
+                datasets: [{
+                    // label: 'viChart',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'transparent'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }, {
+                    data: [2, 9, 13, 15, 22, 31],
+                    backgroundColor: [
+                        'transparent'
+                    ],
+                    borderColor: [
+                        'blue'
+                    ],
+                    borderWidth: 1
+                }, {
+                    data: [1, 4, 2, 5, 21, 15],
+                    backgroundColor: [
+                        'transparent'
+                    ],
+                    borderColor: [
+                        'green'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            display: false
+                        },
+                        gridLines: {
+                            display: false,
+                        }
+                    }],
+
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }]
+                },
+
+                title: {
+                    display: true,
+                    text: '#vichart',
+                    fontSize: 25,
+                    position: 'top',
+                    // top: '0px'
+                },
+
+                legend: {
+                    display: false
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
