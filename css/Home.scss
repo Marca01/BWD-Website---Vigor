@@ -1,14 +1,15 @@
+$primaryColor: rgb(255, 159, 103);
 $greyColor: #999;
 $grayColor: #999999;
+$primaryGreyColor: #a0a0a0;
+$borderColor: #efefef;
 $blackColor: #333333;
-$fontFamily: Interstate,
-Lucida Grande,
-Lucida Sans Unicode,
-Lucida Sans,
-Garuda,
-Verdana,
-Tahoma,
-sans-serif;
+$primaryBlackColor: #32323d;
+$whiteColor: #ffffff;
+$redColor: #db1d1d;
+$blueColor: #1237de;
+$greenColor: #4fb809;
+$fontFamily: Roboto sans-serif;
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +20,109 @@ body {
     font-family: $fontFamily;
 }
 
+.container.nav {
+    width: 100%;
+    padding-left: 15px;
+}
+
+.navbar {
+    // background-color: $primaryColor;
+    background-color: $whiteColor;
+    width: 100%;
+    padding: 0px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__main {
+    display: flex;
+    margin-left: -46px;
+    .nav-item.first {
+        margin-left: 20px;
+    }
+    .nav-item {
+        #nav_LIVE {
+            color: $primaryColor;
+            font-weight: 1000;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: $primaryColor;
+                border-radius: 50px;
+                color: white;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    }
+}
+
+.nav__signUp {
+    margin-right: -33px;
+}
+
+.logo {
+    margin-left: 30px;
+    margin-right: -30px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: $primaryColor;
+}
+
+input {
+    outline: none;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type=search] {
+    background: $whiteColor url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px rgb(126, 126, 126);
+    padding: 9px 10px 9px 32px;
+    width: 120px;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+input[type=search]:focus {
+    width: 240px;
+    background-color: $whiteColor;
+    border-color: $whiteColor;
+}
+
+input:-moz-placeholder {
+    color: $greyColor;
+}
+
+input::-webkit-input-placeholder {
+    color: $greyColor;
+}
+
 .container.slide {
-    margin-top: 100px;
+    margin-top: 0px;
+    // margin-bottom: -10px;
 }
 
 .slick-dots {
@@ -77,5 +179,86 @@ canvas {
     span {
         color: $greyColor;
         font-size: 12px;
+    }
+}
+
+.listDeXuat__item {
+    margin-bottom: 10.5px;
+    border-bottom: 1px solid $borderColor;
+    padding-bottom: 10px;
+    .listDeXuat__content {
+        display: flex;
+        .listDeXuat__songImg {
+            margin-right: 10px;
+            img {
+                border-radius: 50%;
+            }
+        }
+        .listDeXuat__songName {
+            strong {
+                color: $primaryBlackColor;
+                font-weight: 500;
+            }
+            span {
+                color: $primaryGreyColor;
+            }
+        }
+        .listDeXuat__heart {
+            line-height: 50px;
+            position: absolute;
+            right: 65px;
+            color: $grayColor;
+            height: 16px;
+            // z-index: -1;
+            &:hover {
+                cursor: pointer;
+                span {
+                    visibility: visible;
+                }
+                i {
+                    background-color: $borderColor;
+                    padding: 8px;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -8px;
+                    top: 9px;
+                }
+            }
+            span {
+                visibility: hidden;
+                width: 130px;
+                height: 30px;
+                line-height: 30px;
+                background-color: $primaryBlackColor;
+                color: white;
+                font-size: 12px;
+                text-align: center;
+                border-radius: 5px;
+                padding: 0px 10px;
+                position: absolute;
+                z-index: 2;
+                bottom: 90%;
+                left: 50%;
+                margin-left: -73px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid $primaryBlackColor;
+                }
+            }
+        }
+        .listDeXuat__ellipsis {
+            @extend .listDeXuat__heart;
+            right: 30px;
+            span {
+                width: 50px;
+                margin-left: -33px;
+            }
+        }
     }
 }
