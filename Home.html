@@ -415,18 +415,34 @@
         </div>
     </div>
     <!--Script BXH&deXuat-->
-    <!-- <script>
+    <script>
+        let hiddenSpan = document.querySelectorAll(".tooltipText");
         let heartSelect = document.querySelectorAll(".far").forEach(heart => {
             heart.addEventListener("click", () => {
                 // heartSelect.style.backgroundColor = "red";
-                if (heart.style.backgroundColor = "#efefef") {
-                    heart.style.backgroundColor = "#db1d1d";
+                if (heart.className == "far fa-heart") {
+                    heart.className = "fa fa-heart";
+                    heart.style.color = "#db1d1d";
+                    hiddenSpan.forEach(span => {
+                        // let compStyles = window.getComputedStyle(span);
+                        // compStyles.getPropertyValue("visibility");
+                        span.style.display = "none";
+                    });
                 } else {
-                    heart.style.backgroundColor = "#efefef";
+                    heart.className = "far fa-heart";
+                    heart.style.color = "#999999";
+                    hiddenSpan.forEach(span => {
+                        span.style.display = "none";
+                    });
                 }
             })
+            heart.addEventListener("mouseover", () => {
+                hiddenSpan.forEach(span => {
+                    span.style.display = "block";
+                });
+            })
         });
-    </script> -->
+    </script>
     <script>
         var ctx = document.getElementById('viChart');
         var viChart = new Chart(ctx, {
