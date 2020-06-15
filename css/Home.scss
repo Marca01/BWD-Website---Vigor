@@ -190,8 +190,24 @@ canvas {
         display: flex;
         .listDeXuat__songImg {
             margin-right: 10px;
+            &:hover {
+                img {
+                    filter: brightness(50%);
+                }
+                i {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
             img {
                 border-radius: 50%;
+            }
+            i {
+                display: none;
+                position: absolute;
+                left: 35px;
+                top: 18px;
+                color: white;
             }
         }
         .listDeXuat__songName {

@@ -191,8 +191,26 @@ canvas {
   margin-right: 10px;
 }
 
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg:hover i {
+  display: block;
+  cursor: pointer;
+}
+
 .listDeXuat__item .listDeXuat__content .listDeXuat__songImg img {
   border-radius: 50%;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg i {
+  display: none;
+  position: absolute;
+  left: 35px;
+  top: 18px;
+  color: white;
 }
 
 .listDeXuat__item .listDeXuat__content .listDeXuat__songName strong {
