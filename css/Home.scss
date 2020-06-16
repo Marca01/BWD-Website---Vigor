@@ -278,3 +278,36 @@ canvas {
         }
     }
 }
+
+.container.theLoai {
+    margin-top: 10px;
+    h2 {
+        color: $primaryBlackColor;
+    }
+}
+
+.slick--prev {
+    position: relative;
+    left: 94%;
+    top: -250px;
+    font-size: 25.99px;
+    &:hover {
+        color: $primaryColor;
+        cursor: pointer;
+    }
+}
+
+.slick--next {
+    position: relative;
+    left: 97.5%;
+    top: -288px;
+    font-size: 25.99px;
+    &:hover {
+        color: $primaryColor;
+        cursor: pointer;
+    }
+    // &.disable {
+    //     color: $borderColor;
+    //     pointer-events: none;
+    // }
+}

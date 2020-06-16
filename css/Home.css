@@ -284,4 +284,36 @@ canvas {
   width: 50px;
   margin-left: -33px;
 }
+
+.container.theLoai {
+  margin-top: 10px;
+}
+
+.container.theLoai h2 {
+  color: #32323d;
+}
+
+.slick--prev {
+  position: relative;
+  left: 94%;
+  top: -250px;
+  font-size: 25.99px;
+}
+
+.slick--prev:hover {
+  color: #ff9f67;
+  cursor: pointer;
+}
+
+.slick--next {
+  position: relative;
+  left: 97.5%;
+  top: -288px;
+  font-size: 25.99px;
+}
+
+.slick--next:hover {
+  color: #ff9f67;
+  cursor: pointer;
+}
 /*# sourceMappingURL=Home.css.map */
