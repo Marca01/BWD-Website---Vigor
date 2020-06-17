@@ -8,11 +8,22 @@
 body {
   font-family: Roboto sans-serif;
   overflow-x: hidden;
+  z-index: 1;
+}
+
+header {
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .container.nav {
   width: 100%;
   padding-left: 15px;
+  z-index: 6;
 }
 
 .navbar {
@@ -304,8 +315,9 @@ canvas {
 .slick--prevBaiHatMoi {
   position: relative;
   left: 94%;
-  top: -250px;
+  top: -237px;
   font-size: 25.99px;
+  width: 16px;
 }
 
 .slick--prevCover:hover,
@@ -319,9 +331,10 @@ canvas {
 .slick--nextSangTac,
 .slick--nextBaiHatMoi {
   position: relative;
-  left: 97.5%;
-  top: -288px;
+  left: 96.9%;
+  top: -275px;
   font-size: 25.99px;
+  width: 16px;
 }
 
 .slick--nextCover:hover,
@@ -329,5 +342,142 @@ canvas {
 .slick--nextBaiHatMoi:hover {
   color: #ff9f67;
   cursor: pointer;
+}
+
+h2 {
+  font-weight: 1000;
+}
+
+.topCover .fas.fa-play, .topSangTac .fas.fa-play, .baiHatMoi .fas.fa-play {
+  display: none;
+}
+
+.topCover .slide__img00, .topSangTac .slide__img00, .baiHatMoi .slide__img00,
+.topCover .slide__img01,
+.topSangTac .slide__img01,
+.baiHatMoi .slide__img01,
+.topCover .slide__img02,
+.topSangTac .slide__img02,
+.baiHatMoi .slide__img02,
+.topCover .slide__img03,
+.topSangTac .slide__img03,
+.baiHatMoi .slide__img03,
+.topCover .slide__img04,
+.topSangTac .slide__img04,
+.baiHatMoi .slide__img04,
+.topCover .slide__img05,
+.topSangTac .slide__img05,
+.baiHatMoi .slide__img05,
+.topCover .slide__img06,
+.topSangTac .slide__img06,
+.baiHatMoi .slide__img06,
+.topCover .slide__img07,
+.topSangTac .slide__img07,
+.baiHatMoi .slide__img07,
+.topCover .slide__img08,
+.topSangTac .slide__img08,
+.baiHatMoi .slide__img08,
+.topCover .slide__img09,
+.topSangTac .slide__img09,
+.baiHatMoi .slide__img09 {
+  height: 190px;
+  width: 199.8px;
+}
+
+.topCover .slide__img00:hover img, .topSangTac .slide__img00:hover img, .baiHatMoi .slide__img00:hover img,
+.topCover .slide__img01:hover img,
+.topSangTac .slide__img01:hover img,
+.baiHatMoi .slide__img01:hover img,
+.topCover .slide__img02:hover img,
+.topSangTac .slide__img02:hover img,
+.baiHatMoi .slide__img02:hover img,
+.topCover .slide__img03:hover img,
+.topSangTac .slide__img03:hover img,
+.baiHatMoi .slide__img03:hover img,
+.topCover .slide__img04:hover img,
+.topSangTac .slide__img04:hover img,
+.baiHatMoi .slide__img04:hover img,
+.topCover .slide__img05:hover img,
+.topSangTac .slide__img05:hover img,
+.baiHatMoi .slide__img05:hover img,
+.topCover .slide__img06:hover img,
+.topSangTac .slide__img06:hover img,
+.baiHatMoi .slide__img06:hover img,
+.topCover .slide__img07:hover img,
+.topSangTac .slide__img07:hover img,
+.baiHatMoi .slide__img07:hover img,
+.topCover .slide__img08:hover img,
+.topSangTac .slide__img08:hover img,
+.baiHatMoi .slide__img08:hover img,
+.topCover .slide__img09:hover img,
+.topSangTac .slide__img09:hover img,
+.baiHatMoi .slide__img09:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.topCover .slide__img00:hover .fas.fa-play, .topSangTac .slide__img00:hover .fas.fa-play, .baiHatMoi .slide__img00:hover .fas.fa-play,
+.topCover .slide__img01:hover .fas.fa-play,
+.topSangTac .slide__img01:hover .fas.fa-play,
+.baiHatMoi .slide__img01:hover .fas.fa-play,
+.topCover .slide__img02:hover .fas.fa-play,
+.topSangTac .slide__img02:hover .fas.fa-play,
+.baiHatMoi .slide__img02:hover .fas.fa-play,
+.topCover .slide__img03:hover .fas.fa-play,
+.topSangTac .slide__img03:hover .fas.fa-play,
+.baiHatMoi .slide__img03:hover .fas.fa-play,
+.topCover .slide__img04:hover .fas.fa-play,
+.topSangTac .slide__img04:hover .fas.fa-play,
+.baiHatMoi .slide__img04:hover .fas.fa-play,
+.topCover .slide__img05:hover .fas.fa-play,
+.topSangTac .slide__img05:hover .fas.fa-play,
+.baiHatMoi .slide__img05:hover .fas.fa-play,
+.topCover .slide__img06:hover .fas.fa-play,
+.topSangTac .slide__img06:hover .fas.fa-play,
+.baiHatMoi .slide__img06:hover .fas.fa-play,
+.topCover .slide__img07:hover .fas.fa-play,
+.topSangTac .slide__img07:hover .fas.fa-play,
+.baiHatMoi .slide__img07:hover .fas.fa-play,
+.topCover .slide__img08:hover .fas.fa-play,
+.topSangTac .slide__img08:hover .fas.fa-play,
+.baiHatMoi .slide__img08:hover .fas.fa-play,
+.topCover .slide__img09:hover .fas.fa-play,
+.topSangTac .slide__img09:hover .fas.fa-play,
+.baiHatMoi .slide__img09:hover .fas.fa-play {
+  display: block;
+  color: white;
+  cursor: pointer;
+}
+
+.topCover .slide__img00:hover .topSangTac, .topSangTac .slide__img00:hover .topSangTac, .baiHatMoi .slide__img00:hover .topSangTac,
+.topCover .slide__img01:hover .topSangTac,
+.topSangTac .slide__img01:hover .topSangTac,
+.baiHatMoi .slide__img01:hover .topSangTac,
+.topCover .slide__img02:hover .topSangTac,
+.topSangTac .slide__img02:hover .topSangTac,
+.baiHatMoi .slide__img02:hover .topSangTac,
+.topCover .slide__img03:hover .topSangTac,
+.topSangTac .slide__img03:hover .topSangTac,
+.baiHatMoi .slide__img03:hover .topSangTac,
+.topCover .slide__img04:hover .topSangTac,
+.topSangTac .slide__img04:hover .topSangTac,
+.baiHatMoi .slide__img04:hover .topSangTac,
+.topCover .slide__img05:hover .topSangTac,
+.topSangTac .slide__img05:hover .topSangTac,
+.baiHatMoi .slide__img05:hover .topSangTac,
+.topCover .slide__img06:hover .topSangTac,
+.topSangTac .slide__img06:hover .topSangTac,
+.baiHatMoi .slide__img06:hover .topSangTac,
+.topCover .slide__img07:hover .topSangTac,
+.topSangTac .slide__img07:hover .topSangTac,
+.baiHatMoi .slide__img07:hover .topSangTac,
+.topCover .slide__img08:hover .topSangTac,
+.topSangTac .slide__img08:hover .topSangTac,
+.baiHatMoi .slide__img08:hover .topSangTac,
+.topCover .slide__img09:hover .topSangTac,
+.topSangTac .slide__img09:hover .topSangTac,
+.baiHatMoi .slide__img09:hover .topSangTac {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 /*# sourceMappingURL=Home.css.map */

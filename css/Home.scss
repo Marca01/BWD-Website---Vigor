@@ -19,30 +19,32 @@ $fontFamily: Roboto sans-serif;
 body {
     font-family: $fontFamily;
     overflow-x: hidden;
+    z-index: 1;
+}
+
+header {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: sticky;
+    top: 0;
 }
 
 .container.nav {
     width: 100%;
     padding-left: 15px;
-    // position: fixed;
-    // z-index: 3;
-    // left: 50%;
-    // transform: translateX(-50%);
+    z-index: 6;
 }
 
 .navbar {
     background-color: $whiteColor;
     width: 100%;
     padding: 0px;
-    // top: 0px;
 }
 
 .nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    // position: sticky;
-    // top: 0;
 }
 
 .nav__main {
@@ -302,8 +304,9 @@ canvas {
 .slick--prevBaiHatMoi {
     position: relative;
     left: 94%;
-    top: -250px;
+    top: -237px;
     font-size: 25.99px;
+    width: 16px;
     &:hover {
         color: $primaryColor;
         cursor: pointer;
@@ -314,15 +317,56 @@ canvas {
 .slick--nextSangTac,
 .slick--nextBaiHatMoi {
     position: relative;
-    left: 97.5%;
-    top: -288px;
+    left: 96.9%;
+    top: -275px;
     font-size: 25.99px;
+    width: 16px;
     &:hover {
         color: $primaryColor;
         cursor: pointer;
     }
-    // &.disable {
-    //     color: $borderColor;
-    //     pointer-events: none;
-    // }
+}
+
+h2 {
+    font-weight: 1000;
+}
+
+.topCover {
+    .fas.fa-play {
+        display: none;
+    }
+    .slide__img00,
+    .slide__img01,
+    .slide__img02,
+    .slide__img03,
+    .slide__img04,
+    .slide__img05,
+    .slide__img06,
+    .slide__img07,
+    .slide__img08,
+    .slide__img09 {
+        height: 190px;
+        width: 199.8px;
+        &:hover {
+            img {
+                filter: brightness(50%);
+            }
+            .fas.fa-play {
+                display: block;
+                color: white;
+                cursor: pointer;
+            }
+            .topSangTac {
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+
+.topSangTac {
+    @extend .topCover;
+}
+
+.baiHatMoi {
+    @extend .topCover;
 }

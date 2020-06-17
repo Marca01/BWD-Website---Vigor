@@ -21,7 +21,7 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container nav fixed-top" style="font-weight: bold;">
+        <div class="container nav" style="font-weight: bold;">
             <nav class="navbar">
                 <div class="nav">
                     <div class="nav__main">
@@ -56,6 +56,19 @@
             </nav>
         </div>
     </header>
+    <!--Script Header-->
+    <script>
+        const head = document.querySelector("header");
+        const scrolll = () => {
+            if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+                head.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.1)";
+            } else {
+                head.style.boxShadow = "none";
+            }
+        }
+        window.addEventListener("scroll", scrolll);
+    </script>
+
 
     <!--Slider-->
     <div class="container slide">
@@ -569,57 +582,148 @@
         <div class="topCover">
             <h2>Top Cover</h2>
             <div class="slide__topCover">
-                <div class="slide__img00"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img01"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img02"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img03"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img04"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img05"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img06"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img07"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img08"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img09"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img00">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
+                </div>
+                <div class="slide__img01">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 310px;"></i>
+                </div>
+                <div class="slide__img02">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 532px;"></i>
+                </div>
+                <div class="slide__img03">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 754px;"></i>
+                </div>
+                <div class="slide__img04">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 976px;"></i>
+                </div>
+                <div class="slide__img05">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1198px;"></i>
+                </div>
+                <div class="slide__img06">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1420px;"></i>
+                </div>
+                <div class="slide__img07">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1642px;"></i>
+                </div>
+                <div class="slide__img08">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1864px;"></i>
+                </div>
+                <div class="slide__img09">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 2086px;"></i>
+                </div>
+
             </div>
-            <div class="slick--prevCover disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-            <div class="slick--nextCover disable"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            <div class="slick--prevCover disable"><i class="fa fa-angle-left" aria-hidden="true" style="color: #db1d1d;"></i></div>
+            <div class="slick--nextCover disable"><i class="fa fa-angle-right" aria-hidden="true "></i></div>
         </div>
-        <div class="topSangTac">
+        <div class="topSangTac ">
             <h2>Top Sáng Tác</h2>
-            <div class="slide__topSangTac">
-                <div class="slide__img00"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img01"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img02"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img03"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img04"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img05"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img06"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img07"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img08"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img09"><img src="image.jpg" width="90%" height="190px" /></div>
+            <div class="slide__topSangTac ">
+                <div class="slide__img00">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
+                </div>
+                <div class="slide__img01">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 310px;"></i>
+                </div>
+                <div class="slide__img02">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 532px;"></i>
+                </div>
+                <div class="slide__img03">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 754px;"></i>
+                </div>
+                <div class="slide__img04">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 976px;"></i>
+                </div>
+                <div class="slide__img05">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1198px;"></i>
+                </div>
+                <div class="slide__img06">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1420px;"></i>
+                </div>
+                <div class="slide__img07">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1642px;"></i>
+                </div>
+                <div class="slide__img08">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1864px;"></i>
+                </div>
+                <div class="slide__img09">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 2086px;"></i>
+                </div>
             </div>
-            <div class="slick--prevSangTac disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-            <div class="slick--nextSangTac disable"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            <div class="slick--prevSangTac disable "><i class="fa fa-angle-left " aria-hidden="true "></i></div>
+            <div class="slick--nextSangTac disable "><i class="fa fa-angle-right " aria-hidden="true "></i></div>
         </div>
-        <div class="baiHatMoi">
+        <div class="baiHatMoi ">
             <h2>Bài Hát Mới</h2>
-            <div class="slide__baiHatMoi">
-                <div class="slide__img00"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img01"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img02"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img03"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img04"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img05"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img06"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img07"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img08"><img src="image.jpg" width="90%" height="190px" /></div>
-                <div class="slide__img09"><img src="image.jpg" width="90%" height="190px" /></div>
+            <div class="slide__baiHatMoi ">
+                <div class="slide__img00">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
+                </div>
+                <div class="slide__img01">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 310px;"></i>
+                </div>
+                <div class="slide__img02">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 532px;"></i>
+                </div>
+                <div class="slide__img03">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 754px;"></i>
+                </div>
+                <div class="slide__img04">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 976px;"></i>
+                </div>
+                <div class="slide__img05">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1198px;"></i>
+                </div>
+                <div class="slide__img06">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1420px;"></i>
+                </div>
+                <div class="slide__img07">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1642px;"></i>
+                </div>
+                <div class="slide__img08">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1864px;"></i>
+                </div>
+                <div class="slide__img09">
+                    <img src="image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 2086px;"></i>
+                </div>
             </div>
-            <div class="slick--prevBaiHatMoi disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-            <div class="slick--nextBaiHatMoi disable"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            <div class="slick--prevBaiHatMoi disable "><i class="fa fa-angle-left " aria-hidden="true "></i></div>
+            <div class="slick--nextBaiHatMoi disable "><i class="fa fa-angle-right " aria-hidden="true "></i></div>
         </div>
     </div>
     <!--Script theLoai-->
-    <script type="text/javascript">
+    <script type="text/javascript ">
         $(document).ready(function() {
             $('.slide__topCover').slick({
                 // autoplay: true,
