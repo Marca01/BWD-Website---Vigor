@@ -7,6 +7,7 @@
 
 body {
   font-family: Roboto sans-serif;
+  overflow-x: hidden;
 }
 
 .container.nav {
@@ -293,26 +294,39 @@ canvas {
   color: #32323d;
 }
 
-.slick--prev {
+.container.theLoai .topSangTac,
+.container.theLoai .baiHatMoi {
+  margin-top: -50px;
+}
+
+.slick--prevCover,
+.slick--prevSangTac,
+.slick--prevBaiHatMoi {
   position: relative;
   left: 94%;
   top: -250px;
   font-size: 25.99px;
 }
 
-.slick--prev:hover {
+.slick--prevCover:hover,
+.slick--prevSangTac:hover,
+.slick--prevBaiHatMoi:hover {
   color: #ff9f67;
   cursor: pointer;
 }
 
-.slick--next {
+.slick--nextCover,
+.slick--nextSangTac,
+.slick--nextBaiHatMoi {
   position: relative;
   left: 97.5%;
   top: -288px;
   font-size: 25.99px;
 }
 
-.slick--next:hover {
+.slick--nextCover:hover,
+.slick--nextSangTac:hover,
+.slick--nextBaiHatMoi:hover {
   color: #ff9f67;
   cursor: pointer;
 }

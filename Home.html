@@ -21,7 +21,7 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container nav" style="font-weight: bold;">
+        <div class="container nav fixed-top" style="font-weight: bold;">
             <nav class="navbar">
                 <div class="nav">
                     <div class="nav__main">
@@ -566,9 +566,9 @@
 
     <!--theLoai-->
     <div class="container theLoai">
-        <div class="categories">
+        <div class="topCover">
             <h2>Top Cover</h2>
-            <div class="slide-theLoai">
+            <div class="slide__topCover">
                 <div class="slide__img00"><img src="image.jpg" width="90%" height="190px" /></div>
                 <div class="slide__img01"><img src="image.jpg" width="90%" height="190px" /></div>
                 <div class="slide__img02"><img src="image.jpg" width="90%" height="190px" /></div>
@@ -580,14 +580,62 @@
                 <div class="slide__img08"><img src="image.jpg" width="90%" height="190px" /></div>
                 <div class="slide__img09"><img src="image.jpg" width="90%" height="190px" /></div>
             </div>
-            <div class="slick--prev disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-            <div class="slick--next disable"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            <div class="slick--prevCover disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="slick--nextCover disable"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="topSangTac">
+            <h2>Top Sáng Tác</h2>
+            <div class="slide__topSangTac">
+                <div class="slide__img00"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img01"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img02"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img03"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img04"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img05"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img06"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img07"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img08"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img09"><img src="image.jpg" width="90%" height="190px" /></div>
+            </div>
+            <div class="slick--prevSangTac disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="slick--nextSangTac disable"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="baiHatMoi">
+            <h2>Bài Hát Mới</h2>
+            <div class="slide__baiHatMoi">
+                <div class="slide__img00"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img01"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img02"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img03"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img04"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img05"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img06"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img07"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img08"><img src="image.jpg" width="90%" height="190px" /></div>
+                <div class="slide__img09"><img src="image.jpg" width="90%" height="190px" /></div>
+            </div>
+            <div class="slick--prevBaiHatMoi disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="slick--nextBaiHatMoi disable"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
         </div>
     </div>
     <!--Script theLoai-->
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.slide-theLoai').slick({
+            $('.slide__topCover').slick({
+                // autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: false
+            });
+            $('.slide__topSangTac').slick({
+                // autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: false
+            });
+            $('.slide__baiHatMoi').slick({
                 // autoplay: true,
                 autoplaySpeed: 3000,
                 slidesToShow: 5,
@@ -596,14 +644,26 @@
             });
 
         });
-        $('.slick--prev').click(function() {
-            $('.slide-theLoai').slick('slickPrev');
-            // $('.slide-theLoai').on('afterChange', (event, slick, currentSlide) => {
-            //     // console.log(slick, currentSlide);
-            // })
+        // Button Cover
+        $('.slick--prevCover').click(function() {
+            $('.slide__topCover').slick('slickPrev');
         })
-        $('.slick--next').click(function(event) {
-            $('.slide-theLoai').slick('slickNext');
+        $('.slick--nextCover').click(function(event) {
+                $('.slide__topCover').slick('slickNext');
+            })
+            // Button SangTac
+        $('.slick--prevSangTac').click(function() {
+            $('.slide__topSangTac').slick('slickPrev');
+        })
+        $('.slick--nextSangTac').click(function(event) {
+                $('.slide__topSangTac').slick('slickNext');
+            })
+            // Button BaiHatMoi
+        $('.slick--prevBaiHatMoi').click(function() {
+            $('.slide__baiHatMoi').slick('slickPrev');
+        })
+        $('.slick--nextBaiHatMoi').click(function(event) {
+            $('.slide__baiHatMoi').slick('slickNext');
         })
     </script>
 </body>

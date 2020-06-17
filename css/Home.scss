@@ -18,24 +18,31 @@ $fontFamily: Roboto sans-serif;
 
 body {
     font-family: $fontFamily;
+    overflow-x: hidden;
 }
 
 .container.nav {
     width: 100%;
     padding-left: 15px;
+    // position: fixed;
+    // z-index: 3;
+    // left: 50%;
+    // transform: translateX(-50%);
 }
 
 .navbar {
-    // background-color: $primaryColor;
     background-color: $whiteColor;
     width: 100%;
     padding: 0px;
+    // top: 0px;
 }
 
 .nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    // position: sticky;
+    // top: 0;
 }
 
 .nav__main {
@@ -284,9 +291,15 @@ canvas {
     h2 {
         color: $primaryBlackColor;
     }
+    .topSangTac,
+    .baiHatMoi {
+        margin-top: -50px;
+    }
 }
 
-.slick--prev {
+.slick--prevCover,
+.slick--prevSangTac,
+.slick--prevBaiHatMoi {
     position: relative;
     left: 94%;
     top: -250px;
@@ -297,7 +310,9 @@ canvas {
     }
 }
 
-.slick--next {
+.slick--nextCover,
+.slick--nextSangTac,
+.slick--nextBaiHatMoi {
     position: relative;
     left: 97.5%;
     top: -288px;
