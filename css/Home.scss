@@ -334,6 +334,55 @@ h2 {
 .topCover {
     .fas.fa-play {
         display: none;
+        font-size: 30px;
+    }
+    .far.fa-heart,
+    .fas.fa-ellipsis-h {
+        display: none;
+        font-size: 18px;
+    }
+    .heart-album {
+        &:hover {
+            span {
+                visibility: visible;
+            }
+        }
+        span {
+            visibility: hidden;
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            background-color: $primaryBlackColor;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 0px 10px;
+            position: absolute;
+            z-index: 10;
+            bottom: 64%;
+            left: 0%;
+            margin-left: -21px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid $primaryBlackColor;
+            }
+        }
+    }
+    .ellipsis-album {
+        @extend .heart-album;
+        span {
+            width: 50px;
+            position: absolute;
+            left: 0%;
+            margin-left: 128px;
+        }
     }
     .slide__img00,
     .slide__img01,
@@ -351,7 +400,9 @@ h2 {
             img {
                 filter: brightness(50%);
             }
-            .fas.fa-play {
+            .fas.fa-play,
+            .far.fa-heart,
+            .fas.fa-ellipsis-h {
                 display: block;
                 color: white;
                 cursor: pointer;
@@ -361,7 +412,7 @@ h2 {
             }
         }
     }
-    img{
+    img {
         border-radius: 7px;
     }
 }
@@ -376,29 +427,31 @@ h2 {
 
 .container-fluid {
     background-color: black;
-    .container.Ft{
+    .container.Ft {
         font-weight: 600;
-        a{
+        a {
             color: white;
-            &:hover{
+            &:hover {
                 text-decoration: none;
                 color: $primaryColor;
             }
         }
-        .congTy__item, .congDong__item, .lienKet__item{
+        .congTy__item,
+        .congDong__item,
+        .lienKet__item {
             p {
                 font-weight: 700;
                 color: $grayColor;
             }
         }
-        .link-item{
-            font-size: 12px; 
+        .link-item {
+            font-size: 12px;
         }
-        .country{
-            a{
+        .country {
+            a {
                 font-size: 12px;
             }
-            p{
+            p {
                 font-size: 12px;
             }
         }
@@ -407,10 +460,9 @@ h2 {
         i {
             color: $whiteColor;
             font-size: 44px;
-            &:hover{
+            &:hover {
                 color: $primaryColor;
             }
         }
     }
-    
 }

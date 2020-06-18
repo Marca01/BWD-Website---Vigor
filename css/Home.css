@@ -350,6 +350,55 @@ h2 {
 
 .topCover .fas.fa-play, .topSangTac .fas.fa-play, .baiHatMoi .fas.fa-play {
   display: none;
+  font-size: 30px;
+}
+
+.topCover .far.fa-heart, .topSangTac .far.fa-heart, .baiHatMoi .far.fa-heart,
+.topCover .fas.fa-ellipsis-h,
+.topSangTac .fas.fa-ellipsis-h,
+.baiHatMoi .fas.fa-ellipsis-h {
+  display: none;
+  font-size: 18px;
+}
+
+.topCover .heart-album:hover span, .topSangTac .heart-album:hover span, .baiHatMoi .heart-album:hover span, .topCover .ellipsis-album:hover span, .topSangTac .ellipsis-album:hover span, .baiHatMoi .ellipsis-album:hover span {
+  visibility: visible;
+}
+
+.topCover .heart-album span, .topSangTac .heart-album span, .baiHatMoi .heart-album span, .topCover .ellipsis-album span, .topSangTac .ellipsis-album span, .baiHatMoi .ellipsis-album span {
+  visibility: hidden;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #32323d;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px 10px;
+  position: absolute;
+  z-index: 10;
+  bottom: 64%;
+  left: 0%;
+  margin-left: -21px;
+}
+
+.topCover .heart-album span::after, .topSangTac .heart-album span::after, .baiHatMoi .heart-album span::after, .topCover .ellipsis-album span::after, .topSangTac .ellipsis-album span::after, .baiHatMoi .ellipsis-album span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #32323d;
+}
+
+.topCover .ellipsis-album span, .topSangTac .ellipsis-album span, .baiHatMoi .ellipsis-album span {
+  width: 50px;
+  position: absolute;
+  left: 0%;
+  margin-left: 128px;
 }
 
 .topCover .slide__img00, .topSangTac .slide__img00, .baiHatMoi .slide__img00,
@@ -417,33 +466,93 @@ h2 {
 }
 
 .topCover .slide__img00:hover .fas.fa-play, .topSangTac .slide__img00:hover .fas.fa-play, .baiHatMoi .slide__img00:hover .fas.fa-play,
+.topCover .slide__img00:hover .far.fa-heart,
+.topSangTac .slide__img00:hover .far.fa-heart,
+.baiHatMoi .slide__img00:hover .far.fa-heart,
+.topCover .slide__img00:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img00:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img00:hover .fas.fa-ellipsis-h,
 .topCover .slide__img01:hover .fas.fa-play,
 .topSangTac .slide__img01:hover .fas.fa-play,
 .baiHatMoi .slide__img01:hover .fas.fa-play,
+.topCover .slide__img01:hover .far.fa-heart,
+.topSangTac .slide__img01:hover .far.fa-heart,
+.baiHatMoi .slide__img01:hover .far.fa-heart,
+.topCover .slide__img01:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img01:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img01:hover .fas.fa-ellipsis-h,
 .topCover .slide__img02:hover .fas.fa-play,
 .topSangTac .slide__img02:hover .fas.fa-play,
 .baiHatMoi .slide__img02:hover .fas.fa-play,
+.topCover .slide__img02:hover .far.fa-heart,
+.topSangTac .slide__img02:hover .far.fa-heart,
+.baiHatMoi .slide__img02:hover .far.fa-heart,
+.topCover .slide__img02:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img02:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img02:hover .fas.fa-ellipsis-h,
 .topCover .slide__img03:hover .fas.fa-play,
 .topSangTac .slide__img03:hover .fas.fa-play,
 .baiHatMoi .slide__img03:hover .fas.fa-play,
+.topCover .slide__img03:hover .far.fa-heart,
+.topSangTac .slide__img03:hover .far.fa-heart,
+.baiHatMoi .slide__img03:hover .far.fa-heart,
+.topCover .slide__img03:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img03:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img03:hover .fas.fa-ellipsis-h,
 .topCover .slide__img04:hover .fas.fa-play,
 .topSangTac .slide__img04:hover .fas.fa-play,
 .baiHatMoi .slide__img04:hover .fas.fa-play,
+.topCover .slide__img04:hover .far.fa-heart,
+.topSangTac .slide__img04:hover .far.fa-heart,
+.baiHatMoi .slide__img04:hover .far.fa-heart,
+.topCover .slide__img04:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img04:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img04:hover .fas.fa-ellipsis-h,
 .topCover .slide__img05:hover .fas.fa-play,
 .topSangTac .slide__img05:hover .fas.fa-play,
 .baiHatMoi .slide__img05:hover .fas.fa-play,
+.topCover .slide__img05:hover .far.fa-heart,
+.topSangTac .slide__img05:hover .far.fa-heart,
+.baiHatMoi .slide__img05:hover .far.fa-heart,
+.topCover .slide__img05:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img05:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img05:hover .fas.fa-ellipsis-h,
 .topCover .slide__img06:hover .fas.fa-play,
 .topSangTac .slide__img06:hover .fas.fa-play,
 .baiHatMoi .slide__img06:hover .fas.fa-play,
+.topCover .slide__img06:hover .far.fa-heart,
+.topSangTac .slide__img06:hover .far.fa-heart,
+.baiHatMoi .slide__img06:hover .far.fa-heart,
+.topCover .slide__img06:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img06:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img06:hover .fas.fa-ellipsis-h,
 .topCover .slide__img07:hover .fas.fa-play,
 .topSangTac .slide__img07:hover .fas.fa-play,
 .baiHatMoi .slide__img07:hover .fas.fa-play,
+.topCover .slide__img07:hover .far.fa-heart,
+.topSangTac .slide__img07:hover .far.fa-heart,
+.baiHatMoi .slide__img07:hover .far.fa-heart,
+.topCover .slide__img07:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img07:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img07:hover .fas.fa-ellipsis-h,
 .topCover .slide__img08:hover .fas.fa-play,
 .topSangTac .slide__img08:hover .fas.fa-play,
 .baiHatMoi .slide__img08:hover .fas.fa-play,
+.topCover .slide__img08:hover .far.fa-heart,
+.topSangTac .slide__img08:hover .far.fa-heart,
+.baiHatMoi .slide__img08:hover .far.fa-heart,
+.topCover .slide__img08:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img08:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img08:hover .fas.fa-ellipsis-h,
 .topCover .slide__img09:hover .fas.fa-play,
 .topSangTac .slide__img09:hover .fas.fa-play,
-.baiHatMoi .slide__img09:hover .fas.fa-play {
+.baiHatMoi .slide__img09:hover .fas.fa-play,
+.topCover .slide__img09:hover .far.fa-heart,
+.topSangTac .slide__img09:hover .far.fa-heart,
+.baiHatMoi .slide__img09:hover .far.fa-heart,
+.topCover .slide__img09:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img09:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img09:hover .fas.fa-ellipsis-h {
   display: block;
   color: white;
   cursor: pointer;
@@ -502,7 +611,9 @@ h2 {
   color: #ff9f67;
 }
 
-.container-fluid .container.Ft .congTy__item p, .container-fluid .container.Ft .congDong__item p, .container-fluid .container.Ft .lienKet__item p {
+.container-fluid .container.Ft .congTy__item p,
+.container-fluid .container.Ft .congDong__item p,
+.container-fluid .container.Ft .lienKet__item p {
   font-weight: 700;
   color: #999999;
 }
