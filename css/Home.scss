@@ -361,6 +361,9 @@ h2 {
             }
         }
     }
+    img{
+        border-radius: 7px;
+    }
 }
 
 .topSangTac {
@@ -369,4 +372,45 @@ h2 {
 
 .baiHatMoi {
     @extend .topCover;
+}
+
+.container-fluid {
+    background-color: black;
+    .container.Ft{
+        font-weight: 600;
+        a{
+            color: white;
+            &:hover{
+                text-decoration: none;
+                color: $primaryColor;
+            }
+        }
+        .congTy__item, .congDong__item, .lienKet__item{
+            p {
+                font-weight: 700;
+                color: $grayColor;
+            }
+        }
+        .link-item{
+            font-size: 12px; 
+        }
+        .country{
+            a{
+                font-size: 12px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    .socialMedia {
+        i {
+            color: $whiteColor;
+            font-size: 44px;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+    
 }
