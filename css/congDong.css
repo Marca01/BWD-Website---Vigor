@@ -1,101 +1,99 @@
 /* Header */
+
 header {
-    -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 15;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: white;
-  }
-  
-  .container.nav {
-      
+}
+
+.container.nav {
     width: 1110px;
     padding-left: 15px;
     z-index: 6;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     width: 100%;
     padding: 0px;
-  }
-  
-  .nav {
+}
+
+.nav {
     width: 100%;
     height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  
-  .nav__main {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.nav__main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: -46px;
     padding-top: 8px;
     padding-bottom: 8px;
-  }
-  
-  .nav__main .nav-item.first {
+}
+
+.nav__main .nav-item.first {
     margin-left: 20px;
-  }
-  
-  .nav__main .nav-item #nav_LIVE {
+}
+
+.nav__main .nav-item #nav_LIVE {
     color: #ff9f67;
     font-weight: 1000;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-  }
-  
-  .nav__main .nav-item #nav_LIVE:hover {
+}
+
+.nav__main .nav-item #nav_LIVE:hover {
     background-color: #ff9f67;
     border-radius: 50px;
     color: white;
     padding-left: 16px;
     padding-right: 16px;
-  }
-  
-  .nav__signUp {
-      padding-top: 8px;
+}
+
+.nav__signUp {
+    padding-top: 8px;
     margin-right: -33px;
-  }
-  
-  .logo {
+}
+
+.logo {
     margin-left: 30px;
     margin-right: -30px;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     color: black;
-  }
-  
-  .nav-link:hover {
+}
+
+.nav-link:hover {
     color: #ff9f67;
-  }
-  
-  input {
+}
+
+input {
     outline: none;
-  }
-  
-  input[type=search] {
+}
+
+input[type=search] {
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     font-family: inherit;
     font-size: 100%;
-  }
-  
-  input::-webkit-search-decoration,
-  input::-webkit-search-cancel-button {
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
     display: none;
-  }
-  
-  input[type=search] {
+}
+
+input[type=search] {
     background: #ffffff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
     border: solid 1px #7e7e7e;
     padding: 9px 10px 9px 32px;
@@ -103,28 +101,31 @@ header {
     border-radius: 10em;
     -webkit-transition: all .5s;
     transition: all .5s;
-  }
-  
-  input[type=search]:focus {
+}
+
+input[type=search]:focus {
     width: 240px;
     background-color: #ffffff;
     border-color: #ffffff;
-  }
-  
-  input:-moz-placeholder {
+}
+
+input:-moz-placeholder {
     color: #999;
-  }
-  
-  input::-webkit-input-placeholder {
+}
+
+input::-webkit-input-placeholder {
     color: #999;
-  }
-  
+}
+
+
 /* ----Post------ */
-.container-main{
+
+.container-main {
     width: 1110px;
     margin: auto;
 }
-.post-music{
+
+.post-music {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 500px;
@@ -134,7 +135,8 @@ header {
     border-radius: 8px;
     margin-left: 305px;
 }
-.post-video{
+
+.post-video {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 500px;
@@ -144,46 +146,58 @@ header {
     border-radius: 8px;
     margin-left: 305px;
 }
+
 .post_head {
     display: flex;
 }
-.Avatar{
+
+.Avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-.ArtNamee{
+
+.ArtNamee {
     color: black;
 }
-.Timepost{
+
+.Timepost {
     font-size: 10px;
 }
-.MoreOption{
+
+.MoreOption {
     display: flex;
     margin-left: 340px;
 }
-.Caption__body{
+
+.Caption__body {
     width: 85%;
     height: 12%;
 }
-.Music{
+
+.Music {
     width: 100%;
     height: 57%;
     background-color: #000000cb;
 }
-.Video{
+
+.Video {
     width: 100%;
     height: 65%;
     background-color: #000000cb;
 }
-.background-img{
+
+.background-img {
     position: absolute;
     margin-top: 1%;
     margin-left: 33.33%;
     height: 165px;
-    filter:blur(2px);
+    filter: blur(2px);
 }
+
+
 /* music */
+
 * {
     margin: 0;
     padding: 0;
@@ -193,7 +207,6 @@ header {
 *:focus {
     outline: none;
 }
-
 
 h1 {
     margin: 0;
@@ -216,7 +229,6 @@ h3 {
     width: 100%;
     margin: auto;
 }
-
 
 .titre {
     position: absolute;
@@ -291,7 +303,6 @@ h3 {
 .mejs__controls .mejs__volume-button button {
     display: block;
     width: 40px;
-
     padding: 0;
     border: 0;
     font-family: FontAwesome;
@@ -433,64 +444,70 @@ h3 {
     display: none;
 }
 
+
 /* ....................... */
-.post__Foot{
+
+.post__Foot {
     border-top: 1px solid #c0c0c0;
     display: flex;
 }
-.reaction{
-    width: 33.33%;
-    
-}
-.comment{
+
+.reaction {
     width: 33.33%;
 }
-.share{
+
+.comment {
     width: 33.33%;
 }
+
+.share {
+    width: 33.33%;
+}
+
+
 /* Footer */
 
 .container-fluid {
     background-color: black;
-  }
-  
-  .container-fluid .container.Ft {
+}
+
+.container-fluid .container.Ft {
     font-weight: 600;
-  }
-  
-  .container-fluid .container.Ft a {
+}
+
+.container-fluid .container.Ft a {
     color: white;
-  }
-  
-  .container-fluid .container.Ft a:hover {
+}
+
+.container-fluid .container.Ft a:hover {
     text-decoration: none;
     color: #ff9f67;
-  }
-  
-  .container-fluid .container.Ft .congTy__item p,
-  .container-fluid .container.Ft .congDong__item p,
-  .container-fluid .container.Ft .lienKet__item p {
+}
+
+.container-fluid .container.Ft .congTy__item p,
+.container-fluid .container.Ft .congDong__item p,
+.container-fluid .container.Ft .lienKet__item p {
     font-weight: 700;
     color: #999999;
-  }
-  
-  .container-fluid .container.Ft .link-item {
+}
+
+.container-fluid .container.Ft .link-item {
     font-size: 12px;
-  }
-  
-  .container-fluid .container.Ft .country a {
+}
+
+.container-fluid .container.Ft .country a {
     font-size: 12px;
-  }
-  
-  .container-fluid .container.Ft .country p {
+}
+
+.container-fluid .container.Ft .country p {
     font-size: 12px;
-  }
-  
-  .container-fluid .socialMedia i {
+}
+
+.container-fluid .socialMedia i {
     color: #ffffff;
     font-size: 44px;
-  }
-  
-  .container-fluid .socialMedia i:hover {
+}
+
+.container-fluid .socialMedia i:hover {
     color: #ff9f67;
-  }
+}

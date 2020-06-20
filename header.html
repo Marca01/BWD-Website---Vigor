@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    $(function() {
+        $("#Login").load("dangNhap.html");
+    });
+</script>
+
 <body>
     <!-- Header -->
     <header>
@@ -37,7 +43,8 @@
                     </div>
                     <div class="nav__signUp">
                         <li class="nav-item">
-                            <a class="nav-link" href="" id="nav_dangNhap">Đăng nhập</a>
+                            <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
+                            <div id="Login"></div>
                         </li>
                     </div>
                 </div>
@@ -46,6 +53,7 @@
     </header>
     <!-- Script Header -->
     <script>
+        // scroll
         const head = document.querySelector("header");
         const scrolll = () => {
             if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
