@@ -10,17 +10,16 @@ header {
 
 .container.nav {
     width: 1110px;
-    padding-left: 15px;
     z-index: 6;
 }
 
 .navbar {
-    width: 100%;
     padding: 0px;
+    width: 1110px;
 }
 
 .nav {
-    width: 100%;
+    width: 1110px;
     height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -35,8 +34,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     margin-left: -46px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .nav__main .nav-item.first {
@@ -59,7 +57,6 @@ header {
 }
 
 .nav__signUp {
-    padding-top: 8px;
     margin-right: -33px;
 }
 
@@ -206,21 +203,6 @@ input::-webkit-input-placeholder {
 
 *:focus {
     outline: none;
-}
-
-h1 {
-    margin: 0;
-    font-size: 33px;
-    color: #fff;
-    padding: 0 10%;
-}
-
-h3 {
-    margin: 0;
-    font-size: 17px;
-    font-weight: 500;
-    color: #ccc;
-    padding: 0 10%;
 }
 
 .music-player {
