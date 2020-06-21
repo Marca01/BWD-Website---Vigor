@@ -10,7 +10,119 @@ body {
   overflow-x: hidden;
   z-index: 1;
 }
-/* ----------- */
+
+header {
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container.nav {
+  width: 100%;
+  padding-left: 15px;
+  z-index: 6;
+}
+
+.navbar {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0px;
+}
+
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -46px;
+}
+
+.nav__main .nav-item.first {
+  margin-left: 20px;
+}
+
+.nav__main .nav-item #nav_LIVE {
+  color: #ff9f67;
+  font-weight: 1000;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.nav__main .nav-item #nav_LIVE:hover {
+  background-color: #ff9f67;
+  border-radius: 50px;
+  color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.nav__signUp {
+  margin-right: -33px;
+}
+
+.logo {
+  margin-left: 30px;
+  margin-right: -30px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: #ff9f67;
+}
+
+input {
+  outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type=search] {
+  background: #ffffff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #7e7e7e;
+  padding: 9px 10px 9px 32px;
+  width: 120px;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type=search]:focus {
+  width: 240px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+input:-moz-placeholder {
+  color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
 
 .container.slide {
   margin-top: 0px;
@@ -513,4 +625,48 @@ h2 {
   border-radius: 7px;
 }
 
+.container-fluid {
+  background-color: black;
+}
+
+.container-fluid .container.Ft {
+  font-weight: 600;
+}
+
+.container-fluid .container.Ft a {
+  color: white;
+}
+
+.container-fluid .container.Ft a:hover {
+  text-decoration: none;
+  color: #ff9f67;
+}
+
+.container-fluid .container.Ft .congTy__item p,
+.container-fluid .container.Ft .congDong__item p,
+.container-fluid .container.Ft .lienKet__item p {
+  font-weight: 700;
+  color: #999999;
+}
+
+.container-fluid .container.Ft .link-item {
+  font-size: 12px;
+}
+
+.container-fluid .container.Ft .country a {
+  font-size: 12px;
+}
+
+.container-fluid .container.Ft .country p {
+  font-size: 12px;
+}
+
+.container-fluid .socialMedia i {
+  color: #ffffff;
+  font-size: 44px;
+}
+
+.container-fluid .socialMedia i:hover {
+  color: #ff9f67;
+}
 /*# sourceMappingURL=Home.css.map */
