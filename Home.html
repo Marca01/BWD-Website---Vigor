@@ -11,11 +11,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-migrate-3.3.0.min.js" integrity="sha256-wZ3vNXakH9k4P00fNGAlbN0PkpKSyhRa76IFy4V1PYE=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 </head>
@@ -160,7 +160,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/2/7/f/327f68099674128289ba8a2e98232d68.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/2/7/f/327f68099674128289ba8a2e98232d68.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <audio id="sounds" loop="false" volume="60">
                                     <source src="sounds/Hong-Nhan-Jack.mp3" id="A" type="audio/wav">
@@ -185,7 +185,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/2/d/dd2d12b5e9917b0136cc77b9623b47d9.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/2/d/dd2d12b5e9917b0136cc77b9623b47d9.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 90px;"></i>
                             </div>
@@ -207,7 +207,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/0/6/b/406b5324276ed23168cfc11822039372.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/0/6/b/406b5324276ed23168cfc11822039372.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 160px;"></i>
                             </div>
@@ -229,7 +229,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/d/6/2/4d62b014dddf2702af85e1d14d5c0a0b.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/d/6/2/4d62b014dddf2702af85e1d14d5c0a0b.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 233px;"></i>
                             </div>
@@ -251,7 +251,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/4/b/0/c4b0da67bae11731685f79432dc462b7.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/4/b/0/c4b0da67bae11731685f79432dc462b7.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 304px;"></i>
                             </div>
@@ -273,7 +273,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/5/6/2/d562ba6cb1378f273dbe4aef4cb9ef76.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/5/6/2/d562ba6cb1378f273dbe4aef4cb9ef76.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 375px;"></i>
                             </div>
@@ -295,7 +295,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/5/e/c/e/5ece1ca2c332c1e9f655c6a31dbd393b.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/5/e/c/e/5ece1ca2c332c1e9f655c6a31dbd393b.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 446px;"></i>
                             </div>
@@ -317,7 +317,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/b/9/e/a/b9ead86f8c376ce1724921c3b8832ddd.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/b/9/e/a/b9ead86f8c376ce1724921c3b8832ddd.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 520px;"></i>
                             </div>
@@ -339,7 +339,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/b/f/3/8/bf3884d395ee7087e96d707f0adf83a7.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/b/f/3/8/bf3884d395ee7087e96d707f0adf83a7.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 590px;"></i>
                             </div>
@@ -361,7 +361,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/a/3/5/1a35ad17ecb43d66b86c19773678ba51.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/a/3/5/1a35ad17ecb43d66b86c19773678ba51.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 663px;"></i>
                             </div>
@@ -383,7 +383,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/4/0/d/d40d8ef2ededd88c8f1f7ee4c44d6248.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/4/0/d/d40d8ef2ededd88c8f1f7ee4c44d6248.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 732px;"></i>
                             </div>
@@ -405,7 +405,7 @@
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
                                 <a href="#" class="listDeXuat__songLink">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/f/8/0/7f80e3cef3f5afb3ae28b8a6bc3b0bef.jpg" alt="songIMG" width="50px" height="50px">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/f/8/0/7f80e3cef3f5afb3ae28b8a6bc3b0bef.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                 </a>
                                 <i class="fas fa-play" style="position: absolute; top: 804px;"></i>
                             </div>
@@ -430,14 +430,25 @@
     <!--Script BXH&deXuat-->
     <script>
         let playMusic = document.getElementById("sounds");
-        let play = document.querySelectorAll(".listDeXuat__songImg").forEach(audio => {
-            audio.addEventListener("click", (event) => {
-                playMusic.play();
-                window.addEventListener("dblclick", () => {
+        let back = document.querySelectorAll("#songsDeXuat");
+        let playBtn = document.querySelectorAll(".fas.fa-play").forEach(PLAY => {
+            PLAY.addEventListener("click", (event) => {
+                if (PLAY.className == "fas fa-play") {
+                    PLAY.className = "fas fa-pause";
+                    playMusic.play();
+                    // back.forEach(backImg => {
+                    //     backImg.style.filter = "brightness(50%)";
+                    // })
+                } else {
+                    PLAY.className = "fas fa-play";
                     playMusic.pause();
-                })
+                    // back.forEach(backImg => {
+                    //     backImg.style.filter = "brightness(100%)";
+                    // })
+                }
             })
-        })
+
+        });
         let hiddenSpan = document.querySelectorAll(".tooltipText-heart");
         let heartSelect = document.querySelectorAll(".far").forEach(heart => {
             heart.addEventListener("click", () => {

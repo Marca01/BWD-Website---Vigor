@@ -44,18 +44,14 @@ header {
 }
 
 .nav__main .nav-item #nav_LIVE {
-    color: #ff9f67;
-    font-weight: 1000;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.nav__main .nav-item #nav_LIVE:hover {
+    color: white;
     background-color: #ff9f67;
     border-radius: 50px;
-    color: white;
-    padding-left: 16px;
-    padding-right: 16px;
+    font-weight: 1000;
+}
+
+.nav__main .nav-item #nav_congDong {
+    color: #ff9f67;
 }
 
 .nav__signUp {
