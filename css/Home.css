@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   z-index: 1;
 }
+<<<<<<< HEAD
 
 header {
   z-index: 2;
@@ -119,6 +120,9 @@ input:-moz-placeholder {
 input::-webkit-input-placeholder {
   color: #999;
 }
+=======
+/* ----------- */
+>>>>>>> b80cd12e5b835e4d504f3a064ee48757c83baed0
 
 .container.slide {
   margin-top: 0px;
@@ -711,6 +715,7 @@ h2 {
   border-radius: 7px;
 }
 
+<<<<<<< HEAD
 .container-fluid {
   background-color: black;
 }
@@ -761,4 +766,6 @@ h2 {
 .container-fluid .socialMedia i:hover {
   color: #ff9f67;
 }
+=======
+>>>>>>> b80cd12e5b835e4d504f3a064ee48757c83baed0
 /*# sourceMappingURL=Home.css.map */

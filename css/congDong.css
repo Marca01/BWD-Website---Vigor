@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Header */
 
 header {
@@ -113,6 +114,8 @@ input::-webkit-input-placeholder {
     color: #999;
 }
 
+=======
+>>>>>>> b80cd12e5b835e4d504f3a064ee48757c83baed0
 
 /* ----Post------ */
 
@@ -202,21 +205,6 @@ input::-webkit-input-placeholder {
 
 *:focus {
     outline: none;
-}
-
-h1 {
-    margin: 0;
-    font-size: 33px;
-    color: #fff;
-    padding: 0 10%;
-}
-
-h3 {
-    margin: 0;
-    font-size: 17px;
-    font-weight: 500;
-    color: #ccc;
-    padding: 0 10%;
 }
 
 .music-player {
@@ -458,52 +446,4 @@ h3 {
 
 .share {
     width: 33.33%;
-}
-
-
-/* Footer */
-
-.container-fluid {
-    background-color: black;
-}
-
-.container-fluid .container.Ft {
-    font-weight: 600;
-}
-
-.container-fluid .container.Ft a {
-    color: white;
-}
-
-.container-fluid .container.Ft a:hover {
-    text-decoration: none;
-    color: #ff9f67;
-}
-
-.container-fluid .container.Ft .congTy__item p,
-.container-fluid .container.Ft .congDong__item p,
-.container-fluid .container.Ft .lienKet__item p {
-    font-weight: 700;
-    color: #999999;
-}
-
-.container-fluid .container.Ft .link-item {
-    font-size: 12px;
-}
-
-.container-fluid .container.Ft .country a {
-    font-size: 12px;
-}
-
-.container-fluid .container.Ft .country p {
-    font-size: 12px;
-}
-
-.container-fluid .socialMedia i {
-    color: #ffffff;
-    font-size: 44px;
-}
-
-.container-fluid .socialMedia i:hover {
-    color: #ff9f67;
 }
