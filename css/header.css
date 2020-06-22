@@ -35,13 +35,6 @@ header {
 }
 
 .nav__main .nav-item #nav_LIVE {
-    color: #ff9f67;
-    font-weight: 1000;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.nav__main .nav-item #nav_LIVE:hover {
     background-color: #ff9f67;
     border-radius: 50px;
     color: white;
