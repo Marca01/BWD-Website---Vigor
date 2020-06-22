@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+img.logoDn{
+  width: 190px;
+}
 
 .container.Body {
   height: 458px;
