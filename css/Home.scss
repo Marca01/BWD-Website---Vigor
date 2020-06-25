@@ -37,7 +37,8 @@ body {
 }
 
 canvas {
-    background: url('https://zjs.zadn.vn/zmp3-desktop/releases/v0.1.5/images/bg-chart.jpg');
+    // background: url('https://zjs.zadn.vn/zmp3-desktop/releases/v0.1.5/images/bg-chart.jpg');
+    background: linear-gradient(180deg, $primaryColor 0%, #1f1da7 100%);
 }
 
 .listItem__playCount::after {
@@ -54,7 +55,33 @@ canvas {
 }
 
 .BXH__list {
+    // background: linear-gradient(135deg, rgb(126, 125, 124) 0%, rgb(126, 125, 124) 100%);
+    &:hover {
+        .list.list-unstyled::-webkit-scrollbar {
+            display: block;
+        }
+        .listItem__additional {
+            span {
+                margin-right: -12px;
+            }
+        }
+    }
     margin-top: 40px;
+    .list.list-unstyled {
+        overflow: auto;
+        overflow-x: hidden;
+        height: 300px;
+        &::-webkit-scrollbar {
+            display: none;
+            margin-left: 0;
+            width: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, .3);
+            border-radius: 50px;
+            border: 1px solid $borderColor;
+        }
+    }
 }
 
 .list__item {
