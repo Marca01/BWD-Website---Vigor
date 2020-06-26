@@ -94,8 +94,8 @@ canvas {
 }
 
 .listItem__main .listItem__content strong {
-  color: #333333;
-  font-weight: 490;
+  color: #32323d;
+  font-weight: 500;
 }
 
 .listItem__additional span {
@@ -148,7 +148,7 @@ canvas {
 
 .listDeXuat__item .listDeXuat__content .listDeXuat__songName strong {
   color: #32323d;
-  font-weight: 500;
+  font-weight: 640;
 }
 
 .listDeXuat__item .listDeXuat__content .listDeXuat__songName span {

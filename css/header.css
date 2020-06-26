@@ -51,6 +51,7 @@ img.logo {
 
 .nav-link {
     color: black;
+    font-weight: 700;
 }
 
 .nav-link:hover {
@@ -75,8 +76,8 @@ input::-webkit-search-cancel-button {
 }
 
 input[type=search] {
-    background: #ffffff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-    border: solid 1px #7e7e7e;
+    background: #efefef url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #efefef;
     padding: 9px 10px 9px 32px;
     width: 120px;
     border-radius: 10em;
@@ -91,9 +92,9 @@ input[type=search]:focus {
 }
 
 input:-moz-placeholder {
-    color: #999;
+    color: #a0a0a0;
 }
 
 input::-webkit-input-placeholder {
-    color: #999;
+    color: #a0a0a0;
 }

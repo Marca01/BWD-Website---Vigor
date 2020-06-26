@@ -828,18 +828,20 @@
         <div class="topCover">
             <h2>Top Cover</h2>
             <div class="slide__topCover">
-                <div class="slide__img00">
-                    <img src="image/image.jpg" width="199.8px" height="190px" />
-                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
-                    <div class="heart-album">
-                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 35px;"></i>
-                        <span class="tooltipText-heart theLoai">Thêm vào thư viện</span>
+                <a href="playlist.html" class="playlist-link">
+                    <div class="slide__img00">
+                        <img src="image/image.jpg" width="199.8px" height="190px" />
+                        <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
+                        <div class="heart-album">
+                            <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 35px;"></i>
+                            <span class="tooltipText-heart theLoai">Thêm vào thư viện</span>
+                        </div>
+                        <div class="ellipsis-album">
+                            <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 145px;"></i>
+                            <span class="tooltipText-ellipsis">Khác</span>
+                        </div>
                     </div>
-                    <div class="ellipsis-album">
-                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 145px;"></i>
-                        <span class="tooltipText-ellipsis">Khác</span>
-                    </div>
-                </div>
+                </a>
                 <div class="slide__img01">
                     <img src="image/image.jpg" width="199.8px" height="190px" />
                     <i class="fas fa-play" style="position: absolute; top: 80px; left: 310px;"></i>
@@ -1218,6 +1220,7 @@
     </div>
     <!--Script theLoai-->
     <script>
+        let disabledLink = document.querySelector(".playlist-link");
         let hiddenSpanAlbum = document.querySelectorAll(".tooltipText-heart.theLoai");
         let imgAlbum = document.querySelector(".slide__img00");
         let imgAlbum1 = document.querySelector(".slide__img01");
@@ -1239,50 +1242,25 @@
                     hiddenSpanAlbum.forEach(span => {
                         span.style.display = "none";
                     });
+                    disabledLink.removeAttribute("href");
                 } else {
                     heartAlbum.className = "far fa-heart theLoai";
                     heartAlbum.style.color = "white";
                     hiddenSpanAlbum.forEach(span => {
                         span.style.display = "none";
                     });
+                    disabledLink.style.display = "block";
                 }
             })
-            heartAlbum.addEventListener("mouseover", () => {
-                hiddenSpanAlbum.forEach(span => {
-                    span.style.display = "block";
-                });
-            })
-            imgAlbum.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum1.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum2.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum3.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum4.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum5.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum6.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum7.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum8.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
-            imgAlbum9.addEventListener("mouseout", () => {
-                fullHeart.style.display = "none";
-            })
         });
+        disabledLink.setAttribute(document.createAttribute("href"));
+
+        // playlist
+        // imgAlbum.addEventListener("click", () => {
+        //     let createAttr = document.createAttribute("href");
+        //     disabledLink.setAttribute(createAttr);
+        //     disabledLink.href = "playlist.html";
+        // });
     </script>
     <script type="text/javascript ">
         $(document).ready(function() {
