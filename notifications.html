@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<style>
+#btn-scrolltop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 5%;
+    bottom: 13%;
+    outline: none;
+    border: 0;
+    z-index: 10;
+}
+#btn-scrolltop:hover{
+    box-shadow: 0px 5px 20px 1px rgba(170, 170, 170, 0.521); 
+}
+#icon-scrolltop{
+    font-size: 35px;
+    color: #ffa047;
+} 
+#notify-after{
+    display: none;
+}
+#btn-notify{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    border: 0;
+    background-color: rgb(235, 235, 235);
+    outline: none;  
+    z-index: 10;
+    
+}
+#btn-notify:hover{
+    box-shadow: 0px 5px 20px 1px rgba(170, 170, 170, 0.521);
+}
+#icon-notify{
+    font-size: 20px;
+    color:  #ffa047 ;
+}
+#Form_Head{
+    position: fixed;
+    right: 3%;
+    bottom: 15%;
+    background-color:#ffa047;;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
+    z-index: 10;
+}
+
+#icon-exit{
+font-size: 15px;
+color: rgb(255, 255, 255);
+}
+#btn-exit{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: none;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background-color: #ffa047;;
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
+    z-index: 10;
+}  
+</style>
+<script>
+    $(document).ready(function(){
+      $("#btn-notify").click(
+        function(){$("#notify-after").css({"display":"block"});     
+      });
+      $("#btn-exit").click(
+        function(){$("#notify-after").css({"display":"none"});     
+      });
+      $("#btn-scrolltop").click(function() {
+           $("body,html").animate(
+           {
+               scrollTop: $("#header").offset().top
+           },
+           500 //speed
+           );
+           });
+    });
+</script>
+<body>
+    <div id="Scroll-top">
+        <button id="btn-scrolltop" class="rounded-circle"><i id="icon-scrolltop" class="fas fa-angle-up"></i></button>
+    </div>
+    <div id="notify_before">
+        <button id="btn-notify" class="rounded-circle"><i id="icon-notify" class="fas fa-bell"></i></button>
+    </div>
+    <div id="notify-after">
+        <div id="Form_Head"></div>
+        <div id="Form_Exit">
+            <div>
+                <button id="btn-exit" class="rounded-circle">
+                    <i id="icon-exit" class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
