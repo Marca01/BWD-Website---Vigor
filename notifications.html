@@ -17,7 +17,7 @@
         height: 50px;
         position: fixed;
         right: 5%;
-        bottom: 13%;
+        bottom: 12%;
         outline: none;
         border: 0;
         z-index: 10;
@@ -70,6 +70,17 @@
         z-index: 10;
     }
     
+    #Form_Head::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 67.5%;
+        margin-left: -5px;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid rgb(255, 159, 103);
+    }
+    
     #icon-exit {
         font-size: 15px;
         color: rgb(255, 255, 255);
@@ -101,12 +112,23 @@
                 "display": "none"
             });
         });
-        $("#btn-scrollTop").click(function() {
-            $('html, body').animate({
-                scrollTop: 0,
-            });
-        });
     });
+    let scrollBtn = document.getElementById("btn-scrollTop");
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
+    scrollBtn.style.display = "none";
+    const scrolllToTop = () => {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    }
+    window.addEventListener("scroll", scrolllToTop);
 </script>
 
 <body>

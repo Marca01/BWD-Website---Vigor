@@ -152,6 +152,31 @@ body {
   margin-right: 15px;
 }
 
+.playlist__list .playlist__item .playlistItem .playlistItem__img:hover .fas.fa-play, .playlist__list .playlist__item .playlistItem .playlistItem__img:hover .fas.fa-pause {
+  display: block;
+}
+
+.playlist__list .playlist__item .playlistItem .playlistItem__img:hover #playlistItemIMG {
+  position: relative;
+  top: 8px;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.playlist__list .playlist__item .playlistItem .playlistItem__img .fas.fa-play, .playlist__list .playlist__item .playlistItem .playlistItem__img .fas.fa-pause {
+  cursor: pointer;
+  display: none;
+  position: relative;
+  left: 20px;
+  top: -25px;
+  color: white;
+  width: 16px;
+}
+
+.playlist__list .playlist__item .playlistItem .playlistItem__img .fas.fa-pause {
+  display: block;
+}
+
 .playlist__list .playlist__item .playlistItem .playlistItem__content span {
   color: #999999;
 }
@@ -164,10 +189,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.playlist__list .playlist__item .playlistItem .playlistItem__additional .fas.fa-play {
-  display: none;
 }
 
 .playlist__list .playlist__item .playlistItem .playlistItem__additional .heart-playlist, .playlist__list .playlist__item .playlistItem .playlistItem__additional .ellipsis-playlist {
@@ -185,6 +206,15 @@ body {
   visibility: visible;
 }
 
+.playlist__list .playlist__item .playlistItem .playlistItem__additional .heart-playlist:hover i, .playlist__list .playlist__item .playlistItem .playlistItem__additional .ellipsis-playlist:hover i {
+  background-color: #efefef;
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+  top: 35px;
+}
+
 .playlist__list .playlist__item .playlistItem .playlistItem__additional .heart-playlist span, .playlist__list .playlist__item .playlistItem .playlistItem__additional .ellipsis-playlist span {
   visibility: hidden;
   width: 130px;
@@ -198,9 +228,9 @@ body {
   padding: 0px 10px;
   position: absolute;
   z-index: 2;
-  bottom: 65%;
+  bottom: 74%;
   left: 85.3%;
-  margin-left: -70.6px;
+  margin-left: -73.5px;
 }
 
 .playlist__list .playlist__item .playlistItem .playlistItem__additional .heart-playlist span::after, .playlist__list .playlist__item .playlistItem .playlistItem__additional .ellipsis-playlist span::after {
@@ -216,6 +246,10 @@ body {
 
 .playlist__list .playlist__item .playlistItem .playlistItem__additional .ellipsis-playlist {
   right: 20px;
+}
+
+.playlist__list .playlist__item .playlistItem .playlistItem__additional .ellipsis-playlist:hover {
+  padding-left: 16px;
 }
 
 .playlist__list .playlist__item .playlistItem .playlistItem__additional .ellipsis-playlist span {
@@ -236,6 +270,14 @@ body {
 .similarArtist {
   width: 100%;
   margin-right: 150px;
+}
+
+.similarArtist .similarArtist-profile:hover {
+  text-decoration: none;
+}
+
+.similarArtist .similarArtist-profile:focus {
+  outline: none;
 }
 
 .similarArtist .card.similarArtist {
@@ -264,20 +306,45 @@ body {
   color: #999999;
 }
 
-.similarArtist .card.similarArtist .card-body.similarArtist button {
+.similarArtist .card.similarArtist .card-body.similarArtist .btn-following {
+  background-color: #ff9f67;
+  color: white;
+  width: 170px;
+  height: 35px;
+  border: 1px solid #ff9f67;
+  border-radius: 100px;
+}
+
+.similarArtist .card.similarArtist .card-body.similarArtist .btn-following:focus {
+  outline: none;
+}
+
+.similarArtist .card.similarArtist .card-body.similarArtist .btn-following:hover {
+  background-color: white;
+  border: 1px solid white;
+  -webkit-box-shadow: 0 0 8px #a0a0a0;
+          box-shadow: 0 0 8px #a0a0a0;
+  color: #ff9f67;
+}
+
+.similarArtist .card.similarArtist .card-body.similarArtist .btn-follow {
   color: #ff9f67;
   border-radius: 100px;
-  width: 100px;
+  width: 130px;
   height: 35px;
   border: 1px solid #dbdbdb;
   background-color: #f7f7f7;
 }
 
-.similarArtist .card.similarArtist .card-body.similarArtist button:focus {
+.similarArtist .card.similarArtist .card-body.similarArtist .btn-follow i {
+  padding-right: 8px;
+}
+
+.similarArtist .card.similarArtist .card-body.similarArtist .btn-follow:focus {
   outline: none;
 }
 
-.similarArtist .card.similarArtist .card-body.similarArtist button:hover {
+.similarArtist .card.similarArtist .card-body.similarArtist .btn-follow:hover {
   background-color: white;
   border: 1px solid white;
   -webkit-box-shadow: 0 0 8px #a0a0a0;

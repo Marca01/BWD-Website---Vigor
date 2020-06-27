@@ -269,6 +269,18 @@ h2 {
   font-weight: 1000;
 }
 
+.topCover h2, .topSangTac h2, .baiHatMoi h2 {
+  font-weight: 700;
+}
+
+.topCover .playlist-link, .topSangTac .playlist-link, .baiHatMoi .playlist-link {
+  height: 17px;
+}
+
+.topCover .playlist-link:focus, .topSangTac .playlist-link:focus, .baiHatMoi .playlist-link:focus {
+  outline: none;
+}
+
 .topCover .fas.fa-play, .topSangTac .fas.fa-play, .baiHatMoi .fas.fa-play, .topCover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .fas.fa-pause, .topSangTac .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .fas.fa-pause, .baiHatMoi .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .fas.fa-pause {
   display: none;
   font-size: 30px;

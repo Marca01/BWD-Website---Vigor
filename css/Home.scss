@@ -263,6 +263,15 @@ h2 {
 }
 
 .topCover {
+    h2 {
+        font-weight: 700;
+    }
+    .playlist-link {
+        height: 17px;
+        &:focus {
+            outline: none;
+        }
+    }
     .fas.fa-play {
         display: none;
         font-size: 30px;
