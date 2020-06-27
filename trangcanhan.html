@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/trangcanhan.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#notify").load("notifications.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="notify"></div>
+    <header id="header"></header>
+    <div class="container-main">
+        <div class="TCN__Head">
+            <div class="cover">
+                <img id="cover-img" src="image/coverimg.jpg" alt="cover">
+                <img id="ava-img" class="rounded-circle" src="image/ava.jpg" alt="avatar">
+                <div id="profile">
+                    <a href="#" class="text-white" style="background-color: #ff9f67;">Đức Huy</a>
+                    <br>
+                    <span style="background-color: #ff9f67;">Hội An, Việt Nam</span>
+                </div>
+            </div>
+        </div>
+        <div class="TCN__Body">
+            <div class="row">
+                <div class="col-8">
+                    <div class="item__top">
+                        <a id="all-tracks">Tất cả</a>
+                        <a id="all-tracks">Bài hát phổ biến</a>
+                        <a id="all-tracks">Albums</a>
+                        <a id="all-tracks">Playlists</a>
+                    </div>
+                    <div class="post">
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="item__top">
+                        <button id="btn-follow"><i class="fas fa-user-plus"></i>Theo dõi</button>
+                        <button id="btn-following"><i class="fas fa-user-check"></i>Đã theo dõi</button>
+                        <button id="btn-share"><i class="far fa-share-square"></i> Chia sẻ</button>
+                        <button id="btn-more"><i class="fas fa-ellipsis-h"></i></button>
+                        <script>
+                            $(document).ready(function() {
+                                var a = "1,811"
+                                var b = "1,810"
+                                $("#btn-follow").click(
+                                    function()
+                                    {
+                                        $("#btn-following").css({"display":"block"}),
+                                        $("#btn-share").css({"margin-left":"50px"}),
+                                        $('#followers').html(a);
+                                    });
+                                $("#btn-following").click(
+                                    function() 
+                                    {
+                                        $("#btn-following").css({"display":"none"}),
+                                        $("#btn-share").css({"margin-left":"0"}),
+                                        $('#followers').html(b);
+                                    });
+                            });
+                        </script>
+                    </div>
+                    <div class="item__body">
+                        <div class="followers">
+                            <span style="font-size: 14px;">Người theo dõi</span>
+                            <br>
+                            <span id="followers" style="font-size: 25px;">1,810</span>
+                        </div>
+                        <div class="following">
+                            <span style="font-size: 14px;">Đang theo dõi</span>
+                            <br>
+                            <span style="font-size: 25px;">1</span>
+                        </div>
+                        <div class="tracks">
+                            <span style="font-size: 14px;">Bài hát</span>
+                            <br>
+                            <span style="font-size: 25px;">7</span>
+                        </div>
+                    </div>
+                    <div class="likes__list">
+                        <div class="likes__list__head">
+                            <span style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><i class="fas fa-heart"></i> 36 Thích</span>
+                            <span class="seeall" style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><a href="" style="color: rgba(167, 167, 167, 0.829);">Xem tất cả</a></span>
+                        </div>
+                        <div class="likes__list__body">
+                            <ul class="listDeXuat list-unstyled">
+                                <li class="listDeXuat__item">
+                                    <div class="listDeXuat__content">
+                                        <div class="listDeXuat__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/2/7/f/327f68099674128289ba8a2e98232d68.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                            <audio id="sounds" loop="false" volume="60">
+                                            <source src="sounds/Hong-Nhan-Jack.mp3" id="A" type="audio/wav">
+                                        </audio>
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                        <div class="listDeXuat__songName">
+                                            <strong>Hồng Nhan</strong>
+                                            <span>-</span>
+                                            <span>Jack</span>
+                                            <br>
+                                            <span><i class="fas fa-play"></i> 26.2K</span>
+                                            <span><i class="fas fa-heart"></i> 325</span>
+                                            <span><i class="fas fa-comment-alt"></i> 124</span>
+                                        </div>
+                                        <div class="listDeXuat__heart">
+                                            <i class="far fa-heart"></i>
+                                            <span class="tooltipText-heart">Thêm vào thư viện</span>
+                                        </div>
+                                        <div class="listDeXuat__ellipsis">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                            <span class="tooltipText-ellipsis">Khác</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listDeXuat__item">
+                                    <div class="listDeXuat__content">
+                                        <div class="listDeXuat__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/2/d/dd2d12b5e9917b0136cc77b9623b47d9.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                            <i class="fas fa-play" style="position: absolute; top: 273px;"></i>
+                                        </div>
+                                        <div class="listDeXuat__songName">
+                                            <strong>#EDTACNA</strong>
+                                            <span>-</span>
+                                            <span>Hương Giang</span>
+                                            <br>
+                                            <span><i class="fas fa-play"></i> 22.2K</span>
+                                            <span><i class="fas fa-heart"></i> 320</span>
+                                            <span><i class="fas fa-comment-alt"></i> 88</span>
+                                        </div>
+                                        <div class="listDeXuat__heart">
+                                            <i class="far fa-heart"></i>
+                                            <span class="tooltipText-heart">Thêm vào thư viện</span>
+                                        </div>
+                                        <div class="listDeXuat__ellipsis">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                            <span class="tooltipText-ellipsis">Khác</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listDeXuat__item border-0">
+                                    <div class="listDeXuat__content">
+                                        <div class="listDeXuat__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/f/8/0/7f80e3cef3f5afb3ae28b8a6bc3b0bef.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                            <i class="fas fa-play" style="position: absolute; top: 338px;"></i>
+                                        </div>
+                                        <div class="listDeXuat__songName">
+                                            <strong>Người Ta Hỏi Anh</strong>
+                                            <span>-</span>
+                                            <span>Nhật Tinh Anh</span>
+                                            <br>
+                                            <span><i class="fas fa-play"></i> 18.2K</span>
+                                            <span><i class="fas fa-heart"></i> 150</span>
+                                            <span><i class="fas fa-comment-alt"></i> 52</span>
+                                        </div>
+                                        <div class="listDeXuat__heart">
+                                            <i class="far fa-heart"></i>
+                                            <span class="tooltipText-heart">Thêm vào thư viện</span>
+                                        </div>
+                                        <div class="listDeXuat__ellipsis">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                            <span class="tooltipText-ellipsis">Khác</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <script>
+                                // DeXuat
+                                let playMusic = document.getElementById("sounds");
+                                let back = document.querySelectorAll("#songsDeXuat");
+                                let playBtn = document.querySelectorAll(".fas.fa-play").forEach(PLAY => {
+                                    PLAY.addEventListener("click", (event) => {
+                                        if (PLAY.className == "fas fa-play") {
+                                            PLAY.className = "fas fa-pause";
+                                            playMusic.play();
+                                            // back.forEach(backImg => {
+                                            //     backImg.event.target.classList.contains("fas fa-pause").style.filter = "brightness(50%)";
+                                            // })
+                                        } else {
+                                            PLAY.className = "fas fa-play";
+                                            playMusic.pause();
+                                            // back.forEach(backImg => {
+                                            //     backImg.style.filter = "brightness(100%)";
+                                            // })
+                                        }
+                                    })
+
+                                });
+                                // Heart - DeXuat
+                                let hiddenSpan = document.querySelectorAll(".tooltipText-heart");
+                                let heartSelect = document.querySelectorAll(".far").forEach(heart => {
+                                    heart.addEventListener("click", () => {
+                                        if (heart.className == "far fa-heart") {
+                                            heart.className = "fa fa-heart";
+                                            heart.style.color = "rgb(255, 159, 103)";
+                                            hiddenSpan.forEach(span => {
+                                                span.style.display = "none";
+                                            });
+                                        } else {
+                                            heart.className = "far fa-heart";
+                                            heart.style.color = "#999999";
+                                            hiddenSpan.forEach(span => {
+                                                span.style.display = "none";
+                                            });
+                                        }
+                                    })
+                                    heart.addEventListener("mouseover", () => {
+                                        hiddenSpan.forEach(span => {
+                                            span.style.display = "block";
+                                        });
+                                    })
+                                });
+                                // BXH 
+                                // let scrollBar = document.querySelector("")
+                            </script>
+                        </div>
+                    </div>
+                    <div class="Fanalsolikes__list">
+                        <div class="Fanalsolikes__list__head">
+                        <span style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><i class="fas fa-user-friends"></i> Fan cũng thích</span>
+                        <span class="refresh" style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><a href="" style="color: rgba(167, 167, 167, 0.829);">Làm mới</a></span>                   
+                        </div>
+                        <div class="Fanalsolikes__list__body">
+                            <ul class="list__Fanalsolikes list-unstyled">
+                                <li class="list__Fanalsolikes__item">
+                                    <div class="list__Fanalsolikes__content">
+                                        <div class="list__Fanalsolikes__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/2/7/f/327f68099674128289ba8a2e98232d68.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                        </div>
+                                        <div class="list__Fanalsolikes__songName">
+                                            <strong>Jack</strong>
+                                            <br>
+                                            <span><i class="fas fa-user-friends"></i> 1542</span>
+                                        </div>
+                                        <div class="list__Fanalsolikes__follow">
+                                            <button id="btn-fl">
+                                                <i class="fas fa-user-plus"></i>
+                                                Theo dõi
+                                            </button>
+                                        </div>
+                                        <div class="list__Fanalsolikes__following">
+                                            <button id="btn-flw">
+                                                <i class="fas fa-user-check"></i>
+                                                Đã theo dõi
+                                            </button>
+                                        </div>
+                                        <script>
+                                            $(document).ready(function(){
+                                              $("#btn-fl").click(
+                                                function(){
+                                                    $("#btn-flw").css({"display":"block"}),
+                                                    $("#btn-fl").css({"display":"none"}); 
+                                            });       
+                                              $("#btn-flw").click(
+                                                function(){
+                                                    $("#btn-flw").css({"display":"none"}),
+                                                    $("#btn-fl").css({"display":"block"});    
+                                            });
+                                          });
+                                        </script>
+                                    </div>
+                                </li>
+                                <li class="list__Fanalsolikes__item">
+                                    <div class="list__Fanalsolikes__content">
+                                        <div class="list__Fanalsolikes__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/2/d/dd2d12b5e9917b0136cc77b9623b47d9.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                        </div>
+                                        <div class="list__Fanalsolikes__songName">
+                                            <strong>Jack</strong>
+                                            <br>
+                                            <span><i class="fas fa-user-friends"></i> 1542</span>
+                                        </div>
+                                        <div class="list__Fanalsolikes__follow">
+                                            <button id="btn-fla">
+                                                <i class="fas fa-user-plus"></i>
+                                                Theo dõi
+                                            </button>
+                                        </div>
+                                        <div class="list__Fanalsolikes__following">
+                                            <button id="btn-flwa">
+                                                <i class="fas fa-user-check"></i>
+                                                Đã theo dõi
+                                            </button>
+                                        </div>
+                                        <script>
+                                            $(document).ready(function(){
+                                              $("#btn-fla").click(
+                                                function(){
+                                                    $("#btn-flwa").css({"display":"block"}),
+                                                    $("#btn-fla").css({"display":"none"}); 
+                                            });       
+                                              $("#btn-flwa").click(
+                                                function(){
+                                                    $("#btn-flwa").css({"display":"none"}),
+                                                    $("#btn-fla").css({"display":"block"});    
+                                            });
+                                          });
+                                        </script>
+                                    </div>
+                                </li>
+                                <li class="list__Fanalsolikes__item">
+                                    <div class="list__Fanalsolikes__content border-0">
+                                        <div class="list__Fanalsolikes__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/f/8/0/7f80e3cef3f5afb3ae28b8a6bc3b0bef.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                        </div>
+                                        <div class="list__Fanalsolikes__songName">
+                                            <strong>Jack</strong>
+                                            <br>
+                                            <span><i class="fas fa-user-friends"></i> 1542</span>
+                                        </div>
+                                        <div class="list__Fanalsolikes__follow">
+                                            <button id="btn-flb">
+                                                <i class="fas fa-user-plus"></i>
+                                                Theo dõi
+                                            </button>
+                                        </div>
+                                        <div class="list__Fanalsolikes__following">
+                                            <button id="btn-flwb">
+                                                <i class="fas fa-user-check"></i>
+                                                Đã theo dõi
+                                            </button>
+                                        </div>
+                                        <script>
+                                            $(document).ready(function(){
+                                              $("#btn-flb").click(
+                                                function(){
+                                                    $("#btn-flwb").css({"display":"block"}),
+                                                    $("#btn-flb").css({"display":"none"}); 
+                                            });       
+                                              $("#btn-flwb").click(
+                                                function(){
+                                                    $("#btn-flwb").css({"display":"none"}),
+                                                    $("#btn-flb").css({"display":"block"});    
+                                            });
+                                          });
+                                        </script>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
