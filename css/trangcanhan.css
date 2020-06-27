@@ -127,9 +127,9 @@ margin-top: 15px;
 /* -------------- */
 .listDeXuat__item {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10.5px;
     border-bottom: 1px solid #efefef;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   
   .listDeXuat__item .listDeXuat__content {
@@ -140,7 +140,6 @@ margin-top: 15px;
   
   .listDeXuat__item .listDeXuat__content .listDeXuat__songImg {
     margin-right: 10px;
-
   }
   
   .listDeXuat__item .listDeXuat__content .listDeXuat__songImg:hover img {
@@ -171,15 +170,12 @@ margin-top: 15px;
   }
   
   .listDeXuat__item .listDeXuat__content .listDeXuat__songName strong {
-    color: #6d6d6d;
+    color: #32323d;
     font-weight: 500;
-    font-size: 12px;
   }
   
   .listDeXuat__item .listDeXuat__content .listDeXuat__songName span {
     color: #a0a0a0;
-    font-size: 12px;
-    padding-left: 5px;
   }
   
   .listDeXuat__item .listDeXuat__content .listDeXuat__heart, .listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis {
@@ -244,64 +240,4 @@ margin-top: 15px;
     width: 50px;
     margin-left: -33px;
   }
-  /* ------------------ */
-  .Fanalsolikes__list{
-    margin-top: 30px;
-    width: 100%;
-}
-.Fanalsolikes__list__head{
-    width: 100%;
-    height: 30px;
-    border-bottom: 1px solid rgba(167, 167, 167, 0.527);
-}
-.refresh{
-    margin-left: 150px;
-    
-}
-.list__Fanalsolikes__content{
-  display: flex;
-  margin-top: 5px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(167, 167, 167, 0.363);
-}
-.list__Fanalsolikes__item .list__Fanalsolikes__content .list__Fanalsolikes__songImg img {
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.list__Fanalsolikes__item .list__Fanalsolikes__content .list__Fanalsolikes__songName{
-  width: 55%;
-}
-.list__Fanalsolikes__item .list__Fanalsolikes__content .list__Fanalsolikes__songName strong {
-  color: #6d6d6d;
-  font-weight: 500;
-  font-size: 16px;
-}
-.list__Fanalsolikes__item .list__Fanalsolikes__content .list__Fanalsolikes__songName span {
-  color: #6d6d6d;
-  font-weight: 500;
-  font-size: 12px;
-}
-.list__Fanalsolikes__follow button{
-  position: absolute;
-  border-radius: 3px;
-  border: 2px solid rgba(182, 182, 182, 0.664);
-  font-size: 13px;
-  padding: 3px;
-  margin-top: 5px ;
-  background-color: white;
-  outline: none;
-
-}
-.list__Fanalsolikes__following button{
-  border-radius: 3px;
-  background-color: white;
-  border: 2px solid #ff9f67;
-  font-size: 13px;
-  padding: 3px;
-  margin-top: 5px ;
-  color: #ff9f67;
-  outline: none;
-  display: none;
-
-}
   
