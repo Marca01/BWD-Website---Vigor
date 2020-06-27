@@ -1224,17 +1224,17 @@
     <script>
         let disabledLink = document.querySelector(".playlist-link");
         let hiddenSpanAlbum = document.querySelectorAll(".tooltipText-heart.theLoai");
-        let imgAlbum = document.querySelector(".slide__img00");
-        let imgAlbum1 = document.querySelector(".slide__img01");
-        let imgAlbum2 = document.querySelector(".slide__img02");
-        let imgAlbum3 = document.querySelector(".slide__img03");
-        let imgAlbum4 = document.querySelector(".slide__img04");
-        let imgAlbum5 = document.querySelector(".slide__img05");
-        let imgAlbum6 = document.querySelector(".slide__img06");
-        let imgAlbum7 = document.querySelector(".slide__img07");
-        let imgAlbum8 = document.querySelector(".slide__img08");
-        let imgAlbum9 = document.querySelector(".slide__img09");
-        let fullHeart = document.querySelector(".fa.fa-heart.theLoai");
+        let imgAlbum = document.querySelectorAll(".slide__img00");
+        let imgAlbum1 = document.querySelectorAll(".slide__img01");
+        let imgAlbum2 = document.querySelectorAll(".slide__img02");
+        let imgAlbum3 = document.querySelectorAll(".slide__img03");
+        let imgAlbum4 = document.querySelectorAll(".slide__img04");
+        let imgAlbum5 = document.querySelectorAll(".slide__img05");
+        let imgAlbum6 = document.querySelectorAll(".slide__img06");
+        let imgAlbum7 = document.querySelectorAll(".slide__img07");
+        let imgAlbum8 = document.querySelectorAll(".slide__img08");
+        let imgAlbum9 = document.querySelectorAll(".slide__img09");
+        let fullHeart = document.querySelectorAll(".fa.fa-heart.theLoai");
         let heartSelectAlbum = document.querySelectorAll(".far.fa-heart.theLoai").forEach(heartAlbum => {
             heartAlbum.addEventListener("click", () => {
                 if (heartAlbum.className == "far fa-heart theLoai") {
@@ -1251,18 +1251,17 @@
                     hiddenSpanAlbum.forEach(span => {
                         span.style.display = "none";
                     });
-                    disabledLink.style.display = "block";
+                    // disabledLink.setAttribute("href", "playlist.html");
                 }
             })
         });
-        disabledLink.setAttribute(document.createAttribute("href"));
 
         // playlist
-        // imgAlbum.addEventListener("click", () => {
-        //     let createAttr = document.createAttribute("href");
-        //     disabledLink.setAttribute(createAttr);
-        //     disabledLink.href = "playlist.html";
-        // });
+        // imgAlbum.forEach(linkPlaylist => {
+        //     linkPlaylist.addEventListener("click", () => {
+        //         disabledLink.href = "playlist.html";
+        //     })
+        // })
     </script>
     <script type="text/javascript ">
         $(document).ready(function() {
