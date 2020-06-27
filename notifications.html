@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+</head>
+<style>
+    #btn-scrollTop {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 5%;
+        bottom: 12%;
+        outline: none;
+        border: 0;
+        z-index: 10;
+    }
+    
+    #btn-scrollTop:hover {
+        box-shadow: 0px 5px 20px 1px rgba(170, 170, 170, 0.521);
+    }
+    
+    #icon-scrolltop {
+        font-size: 35px;
+        color: #ffa047;
+    }
+    
+    #notify-after {
+        display: none;
+    }
+    
+    #btn-notify {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        border: 0;
+        background-color: rgb(235, 235, 235);
+        outline: none;
+        z-index: 10;
+    }
+    
+    #btn-notify:hover {
+        box-shadow: 0px 5px 20px 1px rgba(170, 170, 170, 0.521);
+    }
+    
+    #icon-notify {
+        font-size: 20px;
+        color: #ffa047;
+    }
+    
+    #Form_Head {
+        position: fixed;
+        right: 3%;
+        bottom: 15%;
+        background-color: #ffa047;
+        ;
+        width: 300px;
+        height: 500px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
+        z-index: 10;
+    }
+    
+    #Form_Head::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 67.5%;
+        margin-left: -5px;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid rgb(255, 159, 103);
+    }
+    
+    #icon-exit {
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+    }
+    
+    #btn-exit {
+        width: 50px;
+        height: 50px;
+        border: 0;
+        outline: none;
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        background-color: #ffa047;
+        ;
+        box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
+        z-index: 10;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        $("#btn-notify").click(function() {
+            $("#notify-after").css({
+                "display": "block"
+            });
+        });
+        $("#btn-exit").click(function() {
+            $("#notify-after").css({
+                "display": "none"
+            });
+        });
+    });
+    let scrollBtn = document.getElementById("btn-scrollTop");
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
+    scrollBtn.style.display = "none";
+    const scrolllToTop = () => {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    }
+    window.addEventListener("scroll", scrolllToTop);
+</script>
+
+<body>
+    <div id="Scroll-top">
+        <button id="btn-scrollTop" class="rounded-circle"><i id="icon-scrolltop" class="fas fa-angle-up"></i></button>
+    </div>
+    <div id="notify_before">
+        <button id="btn-notify" class="rounded-circle"><i id="icon-notify" class="fas fa-bell"></i></button>
+    </div>
+    <div id="notify-after">
+        <div id="Form_Head"></div>
+        <div id="Form_Exit">
+            <div>
+                <button id="btn-exit" class="rounded-circle">
+                    <i id="icon-exit" class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

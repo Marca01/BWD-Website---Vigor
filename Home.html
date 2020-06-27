@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Vigor</title>
+    <!-- <link rel="icon" href="image/logo.png"> -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+</head>
+<!-- Load Header and Footer -->
+<script>
+    $(document).ready(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#notify").load("notifications.html");
+    });
+</script>
+
+<body>
+    <div id="notify"></div>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Slider -->
+    <div class="container slide">
+        <div class="slide">
+            <div class="slide__img00 slide"><img src="image/image.jpg" width="100%" height="300px" /></div>
+            <div class="slide__img01 slide"><img src="image/image.jpg" width="100%" height="300px" /></div>
+            <div class="slide__img02 slide"><img src="image/image.jpg" width="100%" height="300px" /></div>
+            <div class="slide__img03 slide"><img src="image/image.jpg" width="100%" height="300px" /></div>
+            <div class="slide__img04 slide"><img src="image/image.jpg" width="100%" height="300px" /></div>
+        </div>
+    </div>
+    <!--Script Slider-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slide').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+            });
+        });
+    </script>
+
+    <!--BXH&deXuat-->
+    <div class="container BXH&deXuat">
+        <div class="row BXH&deXuat">
+            <div class="col-md-7 BXH&deXuat">
+                <div class="BXH__chart">
+                    <canvas id="viChart" width="100%" height="80px"></canvas>
+                </div>
+                <div class="BXH__list">
+                    <ul class="list list-unstyled">
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span style="color: #db1d1d; font-weight: bold;">01</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/4/0/d/740d5e0fd272d2421d441e9fd5c08fdd.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>ERIK - <strong>Em Không Sai Chúng Ta Sai</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 6.85M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span style="color: #1237de; font-weight: bold;">02</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/f/c/ddfc0c54f8c99b517539cc11c24f6b88.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Bảo Yến Rosie, Great - <strong>Cướp Đi Cả Thế Giới</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 3.49M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span style="color: #4fb809; font-weight: bold;">03</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/6/a/b/f6ab94cda33ac9c190a7ac8cd0315270.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Đình Dũng - <strong>Tình Anh</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 3.15M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>04</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/7/8/6/17861cfa5213a52daec2c556101fb421.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Hòa Minzy, Mr.Siro - <strong>Không Thể Cùng Nhau Suốt Kiếp</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 1.31M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>05</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/b/4/4/6/b4461d303cba114b38429c6ea84d9fa2.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Lê Bảo Bình - <strong>Thích Thì Đến</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 1.04M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>06</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/1/a/6/11a6395562d2eb6e9500d079f8975f32.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Lil Zpoet - <strong>Yêu Từ Đâu Mà Ra?</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 1.01M</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>07</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/a/e/4/9ae496d0b92cf2ca93359d3b6a508a63.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>DatKaa - <strong>Dừng Thương</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 988K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>08</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/5/b/1/95b13527a27d429005a831c450a7a07d.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Huy Vạc, 5Mon - <strong>Anh Đứng Từ Chiều</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 950K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>09</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/1/c/0/f1c06ed70e6be6be9572d99daf5ecc53.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Mr.Siro - <strong>Đừng Lo Anh Đợi Mà</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 899K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>10</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/9/b/9/99b96a7fd7670c2db860df421545bf29.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>YuniBoo, H2K - <strong>Đóa Quỳnh Lan</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 890K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>11</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/4/5/9/e4595c13c050d78241791ddadeb78791.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Tuấn Hưng - <strong>Chỉ Có Thể Là Yêu</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 888K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>12</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/8/d/7/98d7998a7c74ce85500fb19f8ede6150.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Đinh Đại Vũ, KN - <strong>Huynh Đệ À</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 863K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>13</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/f/c/b/cfcbf9f776a34d22b09f87fc43c1fe7f.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Châu Khải Phong - <strong>Áo Cũ Tình Mới</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 849K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>14</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/b/a/c/b/bacbee7a47b8951813a5502f1afcb376.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>G5R Squad - <strong>Đoạn Tình Phai</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 825K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>15</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/0/c/b/c0cbcf26e675d698dc2446ed6d48a2b6.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>YuniBoo, Goctoi Mixer - <strong>Bạn Tình Ơi 2</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 810K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>16</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/5/a/6/95a6dc0b77b93e4ecbbf23235a7f2b50.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Doãn Hiếu - <strong>Tình Sầu Thiên Thu Muôn Lối</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 786K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>17</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/a/e/7/e/ae7e696c6415c850164400e791d7d282.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Tăng Duy Tân - <strong>Ai Đó Không Phải Anh</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 753K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>18</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/f/8/7/cf87ec212f04804d4799837e4ab26089.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Chi Dân - <strong>Chỉ Cần Anh Giả Vờ</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 747K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>19</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/9/a/c/d9acd277ca311a01abefcc4e683ec846.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Vũ Duy Khánh, Đạt G - <strong>Chỉ Khi Anh Một Mình</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 722K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="listItem d-flex justify-content-between">
+                                <div class="listItem__main d-flex align-items-center">
+                                    <div class="listItem__number">
+                                        <span>20</span>
+                                    </div>
+                                    <div class="listItem__img">
+                                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/7/2/8/d728b8ebfe33992bd28c06cf3c192f51.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                    </div>
+                                    <div class="listItem__content">
+                                        <span>Gia Huy Singer - <strong>Khóc Cho Người Ai Khóc Cho Anh</strong> </span>
+                                    </div>
+                                </div>
+                                <div class="listItem__additional">
+                                    <span class="listItem__playCount"> 698K</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5 BXH&deXuat">
+                <ul class="listDeXuat list-unstyled">
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/2/7/f/327f68099674128289ba8a2e98232d68.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <audio id="sounds" loop="false" volume="60">
+                                    <source src="sounds/Hong-Nhan-Jack.mp3" id="A" type="audio/wav">
+                                </audio>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Hồng Nhan</strong> <br>
+                                <span>Jack</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/2/d/dd2d12b5e9917b0136cc77b9623b47d9.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 90px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Em Đã Thấy Anh Cùng Người Ấy</strong> <br>
+                                <span>Hương Giang</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/0/6/b/406b5324276ed23168cfc11822039372.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 160px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Đúng Người Đúng Thời Điểm</strong> <br>
+                                <span>Thanh Hưng</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/d/6/2/4d62b014dddf2702af85e1d14d5c0a0b.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 233px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Một Bước Yêu Vạn Dặm Đau</strong> <br>
+                                <span>Mr.Siro</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/4/b/0/c4b0da67bae11731685f79432dc462b7.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 304px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Một Đêm Say</strong> <br>
+                                <span>Thịnh Suy</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/5/6/2/d562ba6cb1378f273dbe4aef4cb9ef76.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 375px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Đời Là Thế Thôi</strong> <br>
+                                <span>Phú Lê</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/5/e/c/e/5ece1ca2c332c1e9f655c6a31dbd393b.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 446px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Em Sẽ Là Cô Dâu</strong> <br>
+                                <span>Minh Vương M4U, Huy Cung</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/b/9/e/a/b9ead86f8c376ce1724921c3b8832ddd.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 520px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Về Đây Em Lo</strong> <br>
+                                <span>Huỳnh Ái Vy</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/b/f/3/8/bf3884d395ee7087e96d707f0adf83a7.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 590px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Không Phải Em Đúng Không?</strong> <br>
+                                <span>Dương Hoàng Yến</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/a/3/5/1a35ad17ecb43d66b86c19773678ba51.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 663px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Nếu Ta Ngược Lối</strong> <br>
+                                <span>Châu Khải Phong</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/4/0/d/d40d8ef2ededd88c8f1f7ee4c44d6248.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 732px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Yêu Em Dại Khờ</strong> <br>
+                                <span>Lou Hoàng</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listDeXuat__item border-0">
+                        <div class="listDeXuat__content">
+                            <div class="listDeXuat__songImg">
+                                <a href="#" class="listDeXuat__songLink">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/f/8/0/7f80e3cef3f5afb3ae28b8a6bc3b0bef.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                </a>
+                                <i class="fas fa-play" style="position: absolute; top: 804px;"></i>
+                            </div>
+                            <div class="listDeXuat__songName">
+                                <strong>Người Ta Hỏi Anh</strong> <br>
+                                <span>Nhật Tinh Anh</span>
+                            </div>
+                            <div class="listDeXuat__heart">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="listDeXuat__ellipsis">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Script BXH&deXuat-->
+    <script>
+        // DeXuat
+        let playMusic = document.getElementById("sounds");
+        let back = document.querySelectorAll("#songsDeXuat");
+        let playBtn = document.querySelectorAll(".fas.fa-play").forEach(PLAY => {
+            PLAY.addEventListener("click", (event) => {
+                if (PLAY.className == "fas fa-play") {
+                    PLAY.className = "fas fa-pause";
+                    playMusic.play();
+                    // back.forEach(backImg => {
+                    //     backImg.event.target.classList.contains("fas fa-pause").style.filter = "brightness(50%)";
+                    // })
+                } else {
+                    PLAY.className = "fas fa-play";
+                    playMusic.pause();
+                    // back.forEach(backImg => {
+                    //     backImg.style.filter = "brightness(100%)";
+                    // })
+                }
+            })
+
+        });
+        // Heart - DeXuat
+        let hiddenSpan = document.querySelectorAll(".tooltipText-heart");
+        let heartSelect = document.querySelectorAll(".far").forEach(heart => {
+            heart.addEventListener("click", () => {
+                if (heart.className == "far fa-heart") {
+                    heart.className = "fa fa-heart";
+                    heart.style.color = "rgb(255, 159, 103)";
+                    hiddenSpan.forEach(span => {
+                        span.style.display = "none";
+                    });
+                } else {
+                    heart.className = "far fa-heart";
+                    heart.style.color = "#999999";
+                    hiddenSpan.forEach(span => {
+                        span.style.display = "none";
+                    });
+                }
+            })
+            heart.addEventListener("mouseover", () => {
+                hiddenSpan.forEach(span => {
+                    span.style.display = "block";
+                });
+            })
+        });
+        // BXH 
+        // let scrollBar = document.querySelector("")
+    </script>
+    <script>
+        var ctx = document.getElementById('viChart');
+        var viChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6'],
+                datasets: [{
+                    // label: 'viChart',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'transparent'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }, {
+                    data: [2, 9, 13, 15, 22, 31],
+                    backgroundColor: [
+                        'transparent'
+                    ],
+                    borderColor: [
+                        'blue'
+                    ],
+                    borderWidth: 1
+                }, {
+                    data: [1, 4, 2, 5, 21, 15],
+                    backgroundColor: [
+                        'transparent'
+                    ],
+                    borderColor: [
+                        'green'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            display: false
+                        },
+                        gridLines: {
+                            display: false,
+                        }
+                    }],
+
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }]
+                },
+
+                title: {
+                    display: true,
+                    text: '#vichart',
+                    fontSize: 25,
+                    position: 'top',
+                    // top: '0px'
+                },
+
+                legend: {
+                    display: false
+                }
+            }
+        });
+    </script>
+
+    <!--theLoai-->
+    <div class="container theLoai">
+        <div class="topCover">
+            <h2>Top Cover</h2>
+            <div class="slide__topCover">
+                <a href="playlist.html" class="playlist-link">
+                    <div class="slide__img00">
+                        <img src="image/image.jpg" width="199.8px" height="190px" />
+                        <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
+                        <div class="heart-album">
+                            <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 35px;"></i>
+                            <span class="tooltipText-heart theLoai">Thêm vào thư viện</span>
+                        </div>
+                        <div class="ellipsis-album">
+                            <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 145px;"></i>
+                            <span class="tooltipText-ellipsis">Khác</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="slide__img01">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 310px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 257px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 201px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 367px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 350px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img02">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 532px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 479px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 423px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 589px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 572px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img03">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 754px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 701px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 645px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 811px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 794px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img04">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 976px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 923px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 867px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1033px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1016px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img05">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1198px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1145px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1089px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1255px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1128px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img06">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1420px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1367px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1311px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1477px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1460px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img07">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1642px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1589px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1533px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1699px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1682px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img08">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1864px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1811px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1755px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1921px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1904px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img09">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 2086px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 2033px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1977px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 2143px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 2126px;">Khác</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slick--prevCover disable"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="slick--nextCover disable"><i class="fa fa-angle-right" aria-hidden="true "></i></div>
+        </div>
+        <div class="topSangTac ">
+            <h2>Top Sáng Tác</h2>
+            <div class="slide__topSangTac ">
+                <div class="slide__img00">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 35px;"></i>
+                        <span class="tooltipText-heart theLoai">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 145px;"></i>
+                        <span class="tooltipText-ellipsis">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img01">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 310px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 257px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 201px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 367px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 350px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img02">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 532px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 479px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 423px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 589px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 572px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img03">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 754px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 701px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 645px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 811px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 794px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img04">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 976px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 923px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 867px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1033px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1016px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img05">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1198px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1145px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1089px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1255px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1238px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img06">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1420px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1367px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1311px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1477px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1460px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img07">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1642px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1589px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1533px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1699px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1682px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img08">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1864px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1811px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1755px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1921px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1904px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img09">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 2086px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 2033px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1977px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 2143px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 2126px;">Khác</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slick--prevSangTac disable "><i class="fa fa-angle-left " aria-hidden="true "></i></div>
+            <div class="slick--nextSangTac disable "><i class="fa fa-angle-right " aria-hidden="true "></i></div>
+        </div>
+        <div class="baiHatMoi ">
+            <h2>Bài Hát Mới</h2>
+            <div class="slide__baiHatMoi ">
+                <div class="slide__img00">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 89px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 35px;"></i>
+                        <span class="tooltipText-heart theLoai">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 145px;"></i>
+                        <span class="tooltipText-ellipsis">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img01">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 310px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 257px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 201px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 367px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 350px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img02">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 532px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 479px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 423px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 589px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 572px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img03">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 754px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 701px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 645px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 811px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 794px;">Khác</span>
+                    </div>
+
+                </div>
+                <div class="slide__img04">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 976px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 923px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 867px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1033px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1016px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img05">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1198px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1145px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1089px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1255px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1238px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img06">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1420px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1367px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1311px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1477px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1460px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img07">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1642px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1589px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1533px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1699px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1682px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img08">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 1864px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 1811px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1755px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 1921px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 1904px;">Khác</span>
+                    </div>
+                </div>
+                <div class="slide__img09">
+                    <img src="image/image.jpg" width="199.8px" height="190px" />
+                    <i class="fas fa-play" style="position: absolute; top: 80px; left: 2086px;"></i>
+                    <div class="heart-album">
+                        <i class="far fa-heart theLoai" style="position: absolute; top: 86px; left: 2033px;"></i>
+                        <span class="tooltipText-heart theLoai" style="position: absolute; bottom: 64%; margin-left: 1977px;">Thêm vào thư viện</span>
+                    </div>
+                    <div class="ellipsis-album">
+                        <i class="fas fa-ellipsis-h" style="position: absolute; top: 86px; left: 2143px;"></i>
+                        <span class="tooltipText-ellipsis" style="position: absolute; bottom: 64%; margin-left: 2126px;">Khác</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slick--prevBaiHatMoi disable "><i class="fa fa-angle-left " aria-hidden="true "></i></div>
+            <div class="slick--nextBaiHatMoi disable "><i class="fa fa-angle-right " aria-hidden="true "></i></div>
+        </div>
+    </div>
+    <!--Script theLoai-->
+    <script>
+        let disabledLink = document.querySelector(".playlist-link");
+        let hiddenSpanAlbum = document.querySelectorAll(".tooltipText-heart.theLoai");
+        let imgAlbum = document.querySelectorAll(".slide__img00");
+        let imgAlbum1 = document.querySelectorAll(".slide__img01");
+        let imgAlbum2 = document.querySelectorAll(".slide__img02");
+        let imgAlbum3 = document.querySelectorAll(".slide__img03");
+        let imgAlbum4 = document.querySelectorAll(".slide__img04");
+        let imgAlbum5 = document.querySelectorAll(".slide__img05");
+        let imgAlbum6 = document.querySelectorAll(".slide__img06");
+        let imgAlbum7 = document.querySelectorAll(".slide__img07");
+        let imgAlbum8 = document.querySelectorAll(".slide__img08");
+        let imgAlbum9 = document.querySelectorAll(".slide__img09");
+        let fullHeart = document.querySelectorAll(".fa.fa-heart.theLoai");
+        let heartSelectAlbum = document.querySelectorAll(".far.fa-heart.theLoai").forEach(heartAlbum => {
+            heartAlbum.addEventListener("click", () => {
+                if (heartAlbum.className == "far fa-heart theLoai") {
+                    heartAlbum.className = "fa fa-heart theLoai";
+                    heartAlbum.style.color = "white";
+                    heartAlbum.style.fontSize = "18px";
+                    hiddenSpanAlbum.forEach(span => {
+                        span.style.display = "none";
+                    });
+                    disabledLink.removeAttribute("href");
+                } else {
+                    heartAlbum.className = "far fa-heart theLoai";
+                    heartAlbum.style.color = "white";
+                    hiddenSpanAlbum.forEach(span => {
+                        span.style.display = "none";
+                    });
+                    // disabledLink.setAttribute("href", "playlist.html");
+                }
+            })
+        });
+
+        // playlist
+        // imgAlbum.forEach(linkPlaylist => {
+        //     linkPlaylist.addEventListener("click", () => {
+        //         disabledLink.href = "playlist.html";
+        //     })
+        // })
+    </script>
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $('.slide__topCover').slick({
+                // autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: false
+            });
+            $('.slide__topSangTac').slick({
+                // autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: false
+            });
+            $('.slide__baiHatMoi').slick({
+                // autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: false
+            });
+
+        });
+        // Button Cover
+        $('.slick--prevCover').css({
+            "color": "#efefef",
+            "pointer-events": "none"
+        })
+        $('.slick--prevCover').click(function() {
+            $('.slide__topCover').slick('slickPrev');
+            $('.slick--prevCover').css({
+                "color": "#efefef",
+                "pointer-events": "none"
+            })
+            $('.slick--nextCover').css({
+                "color": "black",
+                "pointer-events": "all"
+            })
+        })
+        $('.slick--nextCover').click(function(event) {
+                $('.slide__topCover').slick('slickNext');
+                $('.slick--nextCover').css({
+                    "color": "#efefef",
+                    "pointer-events": "none"
+                })
+                $('.slick--prevCover').css({
+                    "color": "black",
+                    "pointer-events": "all"
+                })
+            })
+            // Button SangTac
+        $('.slick--prevSangTac').css({
+            "color": "#efefef",
+            "pointer-events": "none"
+        })
+        $('.slick--prevSangTac').click(function() {
+            $('.slide__topSangTac').slick('slickPrev');
+            $('.slick--prevSangTac').css({
+                "color": "#efefef",
+                "pointer-events": "none"
+            })
+            $('.slick--nextSangTac').css({
+                "color": "black",
+                "pointer-events": "all"
+            })
+        })
+        $('.slick--nextSangTac').click(function(event) {
+                $('.slide__topSangTac').slick('slickNext');
+                $('.slick--nextSangTac').css({
+                    "color": "#efefef",
+                    "pointer-events": "none"
+                })
+                $('.slick--prevSangTac').css({
+                    "color": "black",
+                    "pointer-events": "all"
+                })
+            })
+            // Button BaiHatMoi
+        $('.slick--prevBaiHatMoi').css({
+            "color": "#efefef",
+            "pointer-events": "none"
+        })
+        $('.slick--prevBaiHatMoi').click(function() {
+            $('.slide__baiHatMoi').slick('slickPrev');
+            $('.slick--prevBaiHatMoi').css({
+                "color": "#efefef",
+                "pointer-events": "none"
+            })
+            $('.slick--nextBaiHatMoi').css({
+                "color": "black",
+                "pointer-events": "all"
+            })
+        })
+        $('.slick--nextBaiHatMoi').click(function(event) {
+            $('.slide__baiHatMoi').slick('slickNext');
+            $('.slick--nextBaiHatMoi').css({
+                "color": "#efefef",
+                "pointer-events": "none"
+            })
+            $('.slick--prevBaiHatMoi').css({
+                "color": "black",
+                "pointer-events": "all"
+            })
+        })
+    </script>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+</body>
+
+</html>

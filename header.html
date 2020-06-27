@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    $(function() {
+        $("#Login").load("dangNhap.html");
+    });
+</script>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav" style="font-weight: bold;">
+            <nav class="navbar">
+                <div class="nav">
+                    <div class="nav__main  mt-1">
+                        <span class="logo">
+                            <a href="#"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
+                        </span>
+                        <li style="border-right: 3px solid rgb(77, 77, 77);" class="mb-3"></li>
+                        <li class="nav-item first">
+                            <a class="nav-link ml-2" href="Home.html" id="nav_trangChu">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="congDong.html" id="nav_congDong">Cộng đồng</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_LIVE">LIVE</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_FAQs">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <form>
+                                <input type="search" placeholder="Music, Singer,...">
+                            </form>
+                        </li>
+                    </div>
+                    <div class="nav__signUp">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
+                            <div id="Login"></div>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Script Header -->
+    <script>
+        // scroll
+        const head = document.querySelector("header");
+        const scrolll = () => {
+            if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+                head.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.1)";
+            } else {
+                head.style.boxShadow = "none";
+            }
+        }
+        window.addEventListener("scroll", scrolll);
+    </script>
+</body>
+
+</html>

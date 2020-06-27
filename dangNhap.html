@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/dangNhap.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=657662461752810&autoLogAppEvents=1" nonce="QUBdfQO2"></script>
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer crossorigin="anonymous"></script> -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="myModal" class="IMGModal">
+            <div class="login">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="container Body">
+                            <div class="loginImg">
+                                <a href="#"><img class="logoDn" src="image/logo.png" alt="LOGO"></a>
+                            </div>
+                            <div class="loginContent">
+                                <h6>Để tiếp tục, hãy đăng nhập vào Vigor</h6>
+                                <span class="close">&times;</span>
+                                <div class="loginContent__platform">
+                                    <div class="loginContent__fb">
+                                        <div id="fb-root"></div>
+                                        <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+                                    </div>
+                                    <div class="loginContent__gg">
+                                        <div class="g-signin2" data-width="228" data-height="40" data-longtitle="true">
+                                            <script>
+                                                function onSuccess(googleUser) {
+                                                    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                                                }
+
+                                                function onFailure(error) {
+                                                    console.log(error);
+                                                }
+
+                                                function renderButton() {
+                                                    gapi.signin2.render('my-signin2', {
+                                                        'scope': 'profile email',
+                                                        'width': 280,
+                                                        'height': 1,
+                                                        'longtitle': true,
+                                                        'theme': 'dark',
+                                                        'onsuccess': onSuccess,
+                                                        'onfailure': onFailure
+                                                    });
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="signUp">
+                                    <p id="signUp__text">Bạn chưa có tài khoản?</p>
+                                    <a id="linkSignUp" href="#">
+                                        <p id="signUp__link">Đăng ký</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+            const body = document.querySelector("body")
+            const login = document.getElementById("nav_dangNhap");
+            const loginPage = document.getElementById("myModal");
+            const closeLogin = document.getElementsByClassName("close")[0];
+
+            // Login
+            login.addEventListener("click", () => {
+                loginPage.style.display = "block";
+                body.style.overflowY = "hidden";
+            })
+            closeLogin.addEventListener("click", () => {
+                loginPage.style.display = "none";
+                body.style.overflowY = "scroll";
+            })
+        </script>
+</body>
+
+</html>
