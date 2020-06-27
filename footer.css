@@ -1,0 +1,47 @@
+img.logoft {
+    width: 150px;
+}
+.container-fluid {
+    background-color: black;
+}
+
+.container-fluid .container.Ft {
+    font-weight: 600;
+}
+
+.container-fluid .container.Ft a {
+    color: white;
+}
+
+.container-fluid .container.Ft a:hover {
+    text-decoration: none;
+    color: #ff9f67;
+}
+
+.container-fluid .container.Ft .congTy__item p,
+.container-fluid .container.Ft .congDong__item p,
+.container-fluid .container.Ft .lienKet__item p {
+    font-weight: 700;
+    color: #999999;
+}
+
+.container-fluid .container.Ft .link-item {
+    font-size: 12px;
+}
+
+.container-fluid .container.Ft .country a {
+    font-size: 12px;
+}
+
+.container-fluid .container.Ft .country p {
+    font-size: 12px;
+}
+
+.container-fluid .socialMedia i {
+    color: #ffffff;
+    font-size: 44px;
+}
+
+.container-fluid .socialMedia i:hover {
+    color: #ff9f67;
+}

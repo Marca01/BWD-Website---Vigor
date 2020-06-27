@@ -1,0 +1,698 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto sans-serif;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+#nav_trangChu {
+  color: #ff9f67;
+}
+
+.container.slide {
+  margin-top: 0px;
+}
+
+.slick-dots {
+  position: relative;
+  top: 260px;
+}
+
+canvas {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff9f67), to(#1f1da7));
+  background: linear-gradient(180deg, #ff9f67 0%, #1f1da7 100%);
+}
+
+.listItem__playCount::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  left: -60px;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+DQogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjAuMyAoNzg5MSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+DQogICAgPHRpdGxlPnN0YXRzX3BsYXkgNDwvdGl0bGU+DQogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+DQogICAgPGRlZnMvPg0KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPg0KICAgICAgICA8ZyBpZD0ic3RhdHNfcGxheS0iIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIGZpbGw9InJnYigxNTMsIDE1MywgMTUzKSI+DQogICAgICAgICAgICA8cGF0aCBkPSJNNCwxMyBMNCwzIEwxMyw4IEw0LDEzIFoiIGlkPSJzdGF0c19wbGF5LTMiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg0K");
+}
+
+.BXH__list {
+  margin-top: 40px;
+}
+
+.BXH__list:hover .list.list-unstyled::-webkit-scrollbar {
+  display: block;
+}
+
+.BXH__list:hover .listItem__additional span {
+  margin-right: -12px;
+}
+
+.BXH__list .list.list-unstyled {
+  overflow: auto;
+  overflow-x: hidden;
+  height: 300px;
+}
+
+.BXH__list .list.list-unstyled::-webkit-scrollbar {
+  display: none;
+  margin-left: 0;
+  width: 12px;
+}
+
+.BXH__list .list.list-unstyled::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  border: 1px solid #efefef;
+}
+
+.list__item {
+  margin-bottom: 10px;
+}
+
+.listItem__main .listItem__number {
+  font-size: 20px;
+  color: #999999;
+}
+
+.listItem__main .listItem__img {
+  padding-left: 15px;
+}
+
+.listItem__main .listItem__content {
+  padding-left: 15px;
+}
+
+.listItem__main .listItem__content span {
+  color: #999999;
+}
+
+.listItem__main .listItem__content strong {
+  color: #32323d;
+  font-weight: 500;
+}
+
+.listItem__additional span {
+  color: #999;
+  font-size: 12px;
+}
+
+.listDeXuat__item {
+  margin-bottom: 10.5px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 10px;
+}
+
+.listDeXuat__item .listDeXuat__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg {
+  margin-right: 10px;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg:hover .fas.fa-play, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg:hover .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg:hover .fas.fa-pause {
+  display: block;
+  cursor: pointer;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg img {
+  border-radius: 50%;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-play, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause {
+  display: none;
+  position: absolute;
+  left: 35px;
+  top: 18px;
+  color: white;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause {
+  display: block;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songName strong {
+  color: #32323d;
+  font-weight: 640;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__songName span {
+  color: #a0a0a0;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__heart, .listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis {
+  line-height: 50px;
+  position: absolute;
+  right: 65px;
+  color: #999999;
+  height: 16px;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__heart:hover, .listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis:hover {
+  cursor: pointer;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__heart:hover span, .listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis:hover span {
+  visibility: visible;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__heart:hover i, .listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis:hover i {
+  background-color: #efefef;
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+  top: 9px;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__heart span, .listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis span {
+  visibility: hidden;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #32323d;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px 10px;
+  position: absolute;
+  z-index: 2;
+  bottom: 90%;
+  left: 50%;
+  margin-left: -73px;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__heart span::after, .listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #32323d;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis {
+  right: 30px;
+}
+
+.listDeXuat__item .listDeXuat__content .listDeXuat__ellipsis span {
+  width: 50px;
+  margin-left: -33px;
+}
+
+.container.theLoai {
+  margin-top: 10px;
+}
+
+.container.theLoai h2 {
+  color: #32323d;
+}
+
+.container.theLoai .topSangTac,
+.container.theLoai .baiHatMoi {
+  margin-top: -50px;
+}
+
+.slick--prevCover,
+.slick--prevSangTac,
+.slick--prevBaiHatMoi {
+  position: relative;
+  left: 94%;
+  top: -237px;
+  font-size: 25.99px;
+  width: 16px;
+}
+
+.slick--prevCover:hover,
+.slick--prevSangTac:hover,
+.slick--prevBaiHatMoi:hover {
+  color: #ff9f67;
+  cursor: pointer;
+}
+
+.slick--nextCover,
+.slick--nextSangTac,
+.slick--nextBaiHatMoi {
+  position: relative;
+  left: 96.9%;
+  top: -275px;
+  font-size: 25.99px;
+  width: 16px;
+}
+
+.slick--nextCover:hover,
+.slick--nextSangTac:hover,
+.slick--nextBaiHatMoi:hover {
+  color: #ff9f67;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 1000;
+}
+
+.topCover h2, .topSangTac h2, .baiHatMoi h2 {
+  font-weight: 700;
+}
+
+.topCover .playlist-link, .topSangTac .playlist-link, .baiHatMoi .playlist-link {
+  height: 17px;
+}
+
+.topCover .playlist-link:focus, .topSangTac .playlist-link:focus, .baiHatMoi .playlist-link:focus {
+  outline: none;
+}
+
+.topCover .fas.fa-play, .topSangTac .fas.fa-play, .baiHatMoi .fas.fa-play, .topCover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .fas.fa-pause, .topSangTac .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .fas.fa-pause, .baiHatMoi .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .fas.fa-pause {
+  display: none;
+  font-size: 30px;
+}
+
+.topCover .far.fa-heart, .topSangTac .far.fa-heart, .baiHatMoi .far.fa-heart,
+.topCover .fas.fa-ellipsis-h,
+.topSangTac .fas.fa-ellipsis-h,
+.baiHatMoi .fas.fa-ellipsis-h,
+.topCover .fa.fa-heart.theLoai,
+.topSangTac .fa.fa-heart.theLoai,
+.baiHatMoi .fa.fa-heart.theLoai {
+  display: none;
+  font-size: 18px;
+}
+
+.topCover .heart-album:hover span, .topSangTac .heart-album:hover span, .baiHatMoi .heart-album:hover span, .topCover .ellipsis-album:hover span, .topSangTac .ellipsis-album:hover span, .baiHatMoi .ellipsis-album:hover span {
+  visibility: visible;
+}
+
+.topCover .heart-album span, .topSangTac .heart-album span, .baiHatMoi .heart-album span, .topCover .ellipsis-album span, .topSangTac .ellipsis-album span, .baiHatMoi .ellipsis-album span {
+  visibility: hidden;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #32323d;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px 10px;
+  position: absolute;
+  z-index: 10;
+  bottom: 64%;
+  left: 0%;
+  margin-left: -21px;
+}
+
+.topCover .heart-album span::after, .topSangTac .heart-album span::after, .baiHatMoi .heart-album span::after, .topCover .ellipsis-album span::after, .topSangTac .ellipsis-album span::after, .baiHatMoi .ellipsis-album span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #32323d;
+}
+
+.topCover .ellipsis-album span, .topSangTac .ellipsis-album span, .baiHatMoi .ellipsis-album span {
+  width: 50px;
+  position: absolute;
+  left: 0%;
+  margin-left: 128px;
+}
+
+.topCover .slide__img00, .topSangTac .slide__img00, .baiHatMoi .slide__img00,
+.topCover .slide__img01,
+.topSangTac .slide__img01,
+.baiHatMoi .slide__img01,
+.topCover .slide__img02,
+.topSangTac .slide__img02,
+.baiHatMoi .slide__img02,
+.topCover .slide__img03,
+.topSangTac .slide__img03,
+.baiHatMoi .slide__img03,
+.topCover .slide__img04,
+.topSangTac .slide__img04,
+.baiHatMoi .slide__img04,
+.topCover .slide__img05,
+.topSangTac .slide__img05,
+.baiHatMoi .slide__img05,
+.topCover .slide__img06,
+.topSangTac .slide__img06,
+.baiHatMoi .slide__img06,
+.topCover .slide__img07,
+.topSangTac .slide__img07,
+.baiHatMoi .slide__img07,
+.topCover .slide__img08,
+.topSangTac .slide__img08,
+.baiHatMoi .slide__img08,
+.topCover .slide__img09,
+.topSangTac .slide__img09,
+.baiHatMoi .slide__img09 {
+  height: 190px;
+  width: 199.8px;
+}
+
+.topCover .slide__img00:hover, .topSangTac .slide__img00:hover, .baiHatMoi .slide__img00:hover,
+.topCover .slide__img01:hover,
+.topSangTac .slide__img01:hover,
+.baiHatMoi .slide__img01:hover,
+.topCover .slide__img02:hover,
+.topSangTac .slide__img02:hover,
+.baiHatMoi .slide__img02:hover,
+.topCover .slide__img03:hover,
+.topSangTac .slide__img03:hover,
+.baiHatMoi .slide__img03:hover,
+.topCover .slide__img04:hover,
+.topSangTac .slide__img04:hover,
+.baiHatMoi .slide__img04:hover,
+.topCover .slide__img05:hover,
+.topSangTac .slide__img05:hover,
+.baiHatMoi .slide__img05:hover,
+.topCover .slide__img06:hover,
+.topSangTac .slide__img06:hover,
+.baiHatMoi .slide__img06:hover,
+.topCover .slide__img07:hover,
+.topSangTac .slide__img07:hover,
+.baiHatMoi .slide__img07:hover,
+.topCover .slide__img08:hover,
+.topSangTac .slide__img08:hover,
+.baiHatMoi .slide__img08:hover,
+.topCover .slide__img09:hover,
+.topSangTac .slide__img09:hover,
+.baiHatMoi .slide__img09:hover {
+  cursor: pointer;
+}
+
+.topCover .slide__img00:hover img, .topSangTac .slide__img00:hover img, .baiHatMoi .slide__img00:hover img,
+.topCover .slide__img01:hover img,
+.topSangTac .slide__img01:hover img,
+.baiHatMoi .slide__img01:hover img,
+.topCover .slide__img02:hover img,
+.topSangTac .slide__img02:hover img,
+.baiHatMoi .slide__img02:hover img,
+.topCover .slide__img03:hover img,
+.topSangTac .slide__img03:hover img,
+.baiHatMoi .slide__img03:hover img,
+.topCover .slide__img04:hover img,
+.topSangTac .slide__img04:hover img,
+.baiHatMoi .slide__img04:hover img,
+.topCover .slide__img05:hover img,
+.topSangTac .slide__img05:hover img,
+.baiHatMoi .slide__img05:hover img,
+.topCover .slide__img06:hover img,
+.topSangTac .slide__img06:hover img,
+.baiHatMoi .slide__img06:hover img,
+.topCover .slide__img07:hover img,
+.topSangTac .slide__img07:hover img,
+.baiHatMoi .slide__img07:hover img,
+.topCover .slide__img08:hover img,
+.topSangTac .slide__img08:hover img,
+.baiHatMoi .slide__img08:hover img,
+.topCover .slide__img09:hover img,
+.topSangTac .slide__img09:hover img,
+.baiHatMoi .slide__img09:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.topCover .slide__img00:hover .fas.fa-play, .topSangTac .slide__img00:hover .fas.fa-play, .baiHatMoi .slide__img00:hover .fas.fa-play, .topCover .slide__img00:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img00:hover .fas.fa-pause, .topSangTac .slide__img00:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img00:hover .fas.fa-pause, .baiHatMoi .slide__img00:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause, .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img00:hover .fas.fa-pause,
+.topCover .slide__img00:hover .far.fa-heart,
+.topSangTac .slide__img00:hover .far.fa-heart,
+.baiHatMoi .slide__img00:hover .far.fa-heart,
+.topCover .slide__img00:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img00:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img00:hover .fas.fa-ellipsis-h,
+.topCover .slide__img00:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img00:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img00:hover .fa.fa-heart.theLoai,
+.topCover .slide__img01:hover .fas.fa-play,
+.topSangTac .slide__img01:hover .fas.fa-play,
+.baiHatMoi .slide__img01:hover .fas.fa-play,
+.topCover .slide__img01:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img01:hover .fas.fa-pause,
+.topSangTac .slide__img01:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img01:hover .fas.fa-pause,
+.baiHatMoi .slide__img01:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img01:hover .fas.fa-pause,
+.topCover .slide__img01:hover .far.fa-heart,
+.topSangTac .slide__img01:hover .far.fa-heart,
+.baiHatMoi .slide__img01:hover .far.fa-heart,
+.topCover .slide__img01:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img01:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img01:hover .fas.fa-ellipsis-h,
+.topCover .slide__img01:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img01:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img01:hover .fa.fa-heart.theLoai,
+.topCover .slide__img02:hover .fas.fa-play,
+.topSangTac .slide__img02:hover .fas.fa-play,
+.baiHatMoi .slide__img02:hover .fas.fa-play,
+.topCover .slide__img02:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img02:hover .fas.fa-pause,
+.topSangTac .slide__img02:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img02:hover .fas.fa-pause,
+.baiHatMoi .slide__img02:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img02:hover .fas.fa-pause,
+.topCover .slide__img02:hover .far.fa-heart,
+.topSangTac .slide__img02:hover .far.fa-heart,
+.baiHatMoi .slide__img02:hover .far.fa-heart,
+.topCover .slide__img02:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img02:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img02:hover .fas.fa-ellipsis-h,
+.topCover .slide__img02:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img02:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img02:hover .fa.fa-heart.theLoai,
+.topCover .slide__img03:hover .fas.fa-play,
+.topSangTac .slide__img03:hover .fas.fa-play,
+.baiHatMoi .slide__img03:hover .fas.fa-play,
+.topCover .slide__img03:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img03:hover .fas.fa-pause,
+.topSangTac .slide__img03:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img03:hover .fas.fa-pause,
+.baiHatMoi .slide__img03:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img03:hover .fas.fa-pause,
+.topCover .slide__img03:hover .far.fa-heart,
+.topSangTac .slide__img03:hover .far.fa-heart,
+.baiHatMoi .slide__img03:hover .far.fa-heart,
+.topCover .slide__img03:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img03:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img03:hover .fas.fa-ellipsis-h,
+.topCover .slide__img03:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img03:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img03:hover .fa.fa-heart.theLoai,
+.topCover .slide__img04:hover .fas.fa-play,
+.topSangTac .slide__img04:hover .fas.fa-play,
+.baiHatMoi .slide__img04:hover .fas.fa-play,
+.topCover .slide__img04:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img04:hover .fas.fa-pause,
+.topSangTac .slide__img04:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img04:hover .fas.fa-pause,
+.baiHatMoi .slide__img04:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img04:hover .fas.fa-pause,
+.topCover .slide__img04:hover .far.fa-heart,
+.topSangTac .slide__img04:hover .far.fa-heart,
+.baiHatMoi .slide__img04:hover .far.fa-heart,
+.topCover .slide__img04:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img04:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img04:hover .fas.fa-ellipsis-h,
+.topCover .slide__img04:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img04:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img04:hover .fa.fa-heart.theLoai,
+.topCover .slide__img05:hover .fas.fa-play,
+.topSangTac .slide__img05:hover .fas.fa-play,
+.baiHatMoi .slide__img05:hover .fas.fa-play,
+.topCover .slide__img05:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img05:hover .fas.fa-pause,
+.topSangTac .slide__img05:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img05:hover .fas.fa-pause,
+.baiHatMoi .slide__img05:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img05:hover .fas.fa-pause,
+.topCover .slide__img05:hover .far.fa-heart,
+.topSangTac .slide__img05:hover .far.fa-heart,
+.baiHatMoi .slide__img05:hover .far.fa-heart,
+.topCover .slide__img05:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img05:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img05:hover .fas.fa-ellipsis-h,
+.topCover .slide__img05:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img05:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img05:hover .fa.fa-heart.theLoai,
+.topCover .slide__img06:hover .fas.fa-play,
+.topSangTac .slide__img06:hover .fas.fa-play,
+.baiHatMoi .slide__img06:hover .fas.fa-play,
+.topCover .slide__img06:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img06:hover .fas.fa-pause,
+.topSangTac .slide__img06:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img06:hover .fas.fa-pause,
+.baiHatMoi .slide__img06:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img06:hover .fas.fa-pause,
+.topCover .slide__img06:hover .far.fa-heart,
+.topSangTac .slide__img06:hover .far.fa-heart,
+.baiHatMoi .slide__img06:hover .far.fa-heart,
+.topCover .slide__img06:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img06:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img06:hover .fas.fa-ellipsis-h,
+.topCover .slide__img06:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img06:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img06:hover .fa.fa-heart.theLoai,
+.topCover .slide__img07:hover .fas.fa-play,
+.topSangTac .slide__img07:hover .fas.fa-play,
+.baiHatMoi .slide__img07:hover .fas.fa-play,
+.topCover .slide__img07:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img07:hover .fas.fa-pause,
+.topSangTac .slide__img07:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img07:hover .fas.fa-pause,
+.baiHatMoi .slide__img07:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img07:hover .fas.fa-pause,
+.topCover .slide__img07:hover .far.fa-heart,
+.topSangTac .slide__img07:hover .far.fa-heart,
+.baiHatMoi .slide__img07:hover .far.fa-heart,
+.topCover .slide__img07:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img07:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img07:hover .fas.fa-ellipsis-h,
+.topCover .slide__img07:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img07:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img07:hover .fa.fa-heart.theLoai,
+.topCover .slide__img08:hover .fas.fa-play,
+.topSangTac .slide__img08:hover .fas.fa-play,
+.baiHatMoi .slide__img08:hover .fas.fa-play,
+.topCover .slide__img08:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img08:hover .fas.fa-pause,
+.topSangTac .slide__img08:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img08:hover .fas.fa-pause,
+.baiHatMoi .slide__img08:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img08:hover .fas.fa-pause,
+.topCover .slide__img08:hover .far.fa-heart,
+.topSangTac .slide__img08:hover .far.fa-heart,
+.baiHatMoi .slide__img08:hover .far.fa-heart,
+.topCover .slide__img08:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img08:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img08:hover .fas.fa-ellipsis-h,
+.topCover .slide__img08:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img08:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img08:hover .fa.fa-heart.theLoai,
+.topCover .slide__img09:hover .fas.fa-play,
+.topSangTac .slide__img09:hover .fas.fa-play,
+.baiHatMoi .slide__img09:hover .fas.fa-play,
+.topCover .slide__img09:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topCover .slide__img09:hover .fas.fa-pause,
+.topSangTac .slide__img09:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .topSangTac .slide__img09:hover .fas.fa-pause,
+.baiHatMoi .slide__img09:hover .listDeXuat__item .listDeXuat__content .listDeXuat__songImg .fas.fa-pause,
+.listDeXuat__item .listDeXuat__content .listDeXuat__songImg .baiHatMoi .slide__img09:hover .fas.fa-pause,
+.topCover .slide__img09:hover .far.fa-heart,
+.topSangTac .slide__img09:hover .far.fa-heart,
+.baiHatMoi .slide__img09:hover .far.fa-heart,
+.topCover .slide__img09:hover .fas.fa-ellipsis-h,
+.topSangTac .slide__img09:hover .fas.fa-ellipsis-h,
+.baiHatMoi .slide__img09:hover .fas.fa-ellipsis-h,
+.topCover .slide__img09:hover .fa.fa-heart.theLoai,
+.topSangTac .slide__img09:hover .fa.fa-heart.theLoai,
+.baiHatMoi .slide__img09:hover .fa.fa-heart.theLoai {
+  display: block;
+  color: white;
+  cursor: pointer;
+}
+
+.topCover .slide__img00:hover .topSangTac, .topSangTac .slide__img00:hover .topSangTac, .baiHatMoi .slide__img00:hover .topSangTac,
+.topCover .slide__img01:hover .topSangTac,
+.topSangTac .slide__img01:hover .topSangTac,
+.baiHatMoi .slide__img01:hover .topSangTac,
+.topCover .slide__img02:hover .topSangTac,
+.topSangTac .slide__img02:hover .topSangTac,
+.baiHatMoi .slide__img02:hover .topSangTac,
+.topCover .slide__img03:hover .topSangTac,
+.topSangTac .slide__img03:hover .topSangTac,
+.baiHatMoi .slide__img03:hover .topSangTac,
+.topCover .slide__img04:hover .topSangTac,
+.topSangTac .slide__img04:hover .topSangTac,
+.baiHatMoi .slide__img04:hover .topSangTac,
+.topCover .slide__img05:hover .topSangTac,
+.topSangTac .slide__img05:hover .topSangTac,
+.baiHatMoi .slide__img05:hover .topSangTac,
+.topCover .slide__img06:hover .topSangTac,
+.topSangTac .slide__img06:hover .topSangTac,
+.baiHatMoi .slide__img06:hover .topSangTac,
+.topCover .slide__img07:hover .topSangTac,
+.topSangTac .slide__img07:hover .topSangTac,
+.baiHatMoi .slide__img07:hover .topSangTac,
+.topCover .slide__img08:hover .topSangTac,
+.topSangTac .slide__img08:hover .topSangTac,
+.baiHatMoi .slide__img08:hover .topSangTac,
+.topCover .slide__img09:hover .topSangTac,
+.topSangTac .slide__img09:hover .topSangTac,
+.baiHatMoi .slide__img09:hover .topSangTac {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.topCover img, .topSangTac img, .baiHatMoi img {
+  border-radius: 7px;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+.container-fluid .container.Ft {
+  font-weight: 600;
+}
+
+.container-fluid .container.Ft .logo.m-0 {
+  margin-left: 0px;
+  position: relative;
+  top: -32px;
+}
+
+.container-fluid .container.Ft a {
+  color: white;
+}
+
+.container-fluid .container.Ft a:hover {
+  text-decoration: none;
+  color: #ff9f67;
+}
+
+.container-fluid .container.Ft .congTy__item p,
+.container-fluid .container.Ft .congDong__item p,
+.container-fluid .container.Ft .lienKet__item p {
+  font-weight: 700;
+  color: #999999;
+}
+
+.container-fluid .container.Ft .link-item {
+  font-size: 12px;
+}
+
+.container-fluid .container.Ft .country a {
+  font-size: 12px;
+}
+
+.container-fluid .container.Ft .country p {
+  font-size: 12px;
+}
+
+.container-fluid .socialMedia i {
+  color: #ffffff;
+  font-size: 44px;
+}
+
+.container-fluid .socialMedia i:hover {
+  color: #ff9f67;
+}
+/*# sourceMappingURL=Home.css.map */

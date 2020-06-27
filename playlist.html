@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/playlist.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+</head>
+<script>
+    $(document).ready(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+
+<body>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Playlist -->
+    <div class="container playlist">
+        <!-- Playlist head -->
+        <div class="playlist__head">
+            <div class="row playlist">
+                <div class="col-md-2 playlist">
+                    <div class="playlist-img">
+                        <a href="#">
+                            <img src="image/playlistImg.png" alt="playlistIMG" width="150px" height="150px">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 playlist">
+                    <div class="playlist-info">
+                        <div class="playlist-info text">
+                            <h2>Top Bài Cover Được Yêu Thích Nhất</h2>
+                            <p>Lorde</p>
+                        </div>
+                        <div class="playlist-info btn">
+                            <button class="playlist playBtn">
+                                <i class="fas fa-play"></i>
+                                <p>PHÁT</p>
+                            </button>
+                            <button class="playlist loveBtn">
+                                <i class="fa fa-heart"></i>
+                                <p>THÊM VÀO THƯ VIỆN</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 playlist">
+                    <div class="playlist-stat">
+                        <span>7 songs - 41 mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Playlist list -->
+        <div class="playlist__list">
+            <ul class="playlist list list-unstyled">
+                <li class="playlist__symbol">
+                    <div class="playlistSymbol">
+                        <div class="playlistSymbol__main">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlistItem">
+                        <div class="playlistItem__main d-flex align-items-center">
+                            <div class="playlistItem__number">
+                                <span>01</span>
+                            </div>
+                            <div class="playlistItem__img">
+                                <a href="#" class="playlistItem__link">
+                                    <img src="https://i1.sndcdn.com/artworks-000145839509-t5w1yb-t50x50.jpg" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
+                                </a>
+                                <audio id="sounds" loop="false" volume="60">
+                                    <source src="sounds/từ chối nhẹ nhàng thôi.mp3" id="A" type="audio/wav">
+                                </audio>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="playlistItem__content">
+                                <span>Gia Huy Singer - <strong>Khóc Cho Người Ai Khóc Cho Anh</strong> </span>
+                            </div>
+                        </div>
+                        <div class="playlistItem__additional">
+                            <div class="heart-playlist">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="ellipsis-playlist">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlistItem">
+                        <div class="playlistItem__main d-flex align-items-center">
+                            <div class="playlistItem__number">
+                                <span>02</span>
+                            </div>
+                            <div class="playlistItem__img">
+                                <a href="#" class="playlistItem__link">
+                                    <img src="https://i1.sndcdn.com/artworks-000152877723-ifd477-t50x50.jpg" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
+                                </a>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="playlistItem__content">
+                                <span>City of the Sun - <strong>While We Are Young</strong> </span>
+                            </div>
+                        </div>
+                        <div class="playlistItem__additional">
+                            <div class="heart-playlist">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="ellipsis-playlist">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlistItem">
+                        <div class="playlistItem__main d-flex align-items-center">
+                            <div class="playlistItem__number">
+                                <span>03</span>
+                            </div>
+                            <div class="playlistItem__img">
+                                <a href="#" class="playlistItem__link">
+                                    <img src="https://i1.sndcdn.com/artworks-000181032496-ap5rzd-t50x50.jpg" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
+                                </a>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="playlistItem__content">
+                                <span>Proto - <strong>Proto - Stay Free (ft.Djodie)</strong> </span>
+                            </div>
+                        </div>
+                        <div class="playlistItem__additional">
+                            <div class="heart-playlist">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="ellipsis-playlist">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlistItem">
+                        <div class="playlistItem__main d-flex align-items-center">
+                            <div class="playlistItem__number">
+                                <span>04</span>
+                            </div>
+                            <div class="playlistItem__img">
+                                <a href="#" class="playlistItem__link">
+                                    <img src="https://i1.sndcdn.com/artworks-AD9NbRLezn0X-0-t50x50.jpg" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
+                                </a>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="playlistItem__content">
+                                <span>Super Duper - <strong>Feel My Way</strong> </span>
+                            </div>
+                        </div>
+                        <div class="playlistItem__additional">
+                            <div class="heart-playlist">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="ellipsis-playlist">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlistItem">
+                        <div class="playlistItem__main d-flex align-items-center">
+                            <div class="playlistItem__number">
+                                <span>05</span>
+                            </div>
+                            <div class="playlistItem__img">
+                                <a href="#" class="playlistItem__link">
+                                    <img src="https://i1.sndcdn.com/artworks-000375489726-3a2b2c-t50x50.jpg" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
+                                </a>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="playlistItem__content">
+                                <span>Swardy - <strong>Here On My Own</strong> </span>
+                            </div>
+                        </div>
+                        <div class="playlistItem__additional">
+                            <div class="heart-playlist">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="ellipsis-playlist">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlistItem">
+                        <div class="playlistItem__main d-flex align-items-center">
+                            <div class="playlistItem__number">
+                                <span>06</span>
+                            </div>
+                            <div class="playlistItem__img">
+                                <a href="#" class="playlistItem__link">
+                                    <img src="https://i1.sndcdn.com/artworks-2YQozFeukHkE-0-t50x50.png" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
+                                </a>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="playlistItem__content">
+                                <span>San Holo - <strong>Worthy</strong> </span>
+                            </div>
+                        </div>
+                        <div class="playlistItem__additional">
+                            <div class="heart-playlist">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="ellipsis-playlist">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item border-0">
+                    <div class="playlistItem">
+                        <div class="playlistItem__main d-flex align-items-center">
+                            <div class="playlistItem__number">
+                                <span>07</span>
+                            </div>
+                            <div class="playlistItem__img">
+                                <a href="#" class="playlistItem__link">
+                                    <img src="https://i1.sndcdn.com/artworks-CVyi5RdfFjG0-0-t50x50.png" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
+                                </a>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="playlistItem__content">
+                                <span>Ashe - <strong>Real Love</strong> </span>
+                            </div>
+                        </div>
+                        <div class="playlistItem__additional">
+                            <div class="heart-playlist">
+                                <i class="far fa-heart"></i>
+                                <span class="tooltipText-heart">Thêm vào thư viện</span>
+                            </div>
+                            <div class="ellipsis-playlist">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span class="tooltipText-ellipsis">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Similar Artist -->
+        <h2 class="mt-4">Nghệ Sĩ Tham Gia</h2>
+        <div class="container artist">
+            <div class="slide-artist">
+                <div class="similarArtist">
+                    <div class="card similarArtist">
+                        <a href="trangcanhan.html" class="similarArtist-profile">
+                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/e/ee58fcc0ff45002b8d416bd7685809ce_1487040461.jpg" id="artist" width="255px" height="255px">
+                        </a>
+                        <div class="card-body similarArtist">
+                            <div class="similarArtist-info">
+                                <strong>Sơn Tùng M-TP</strong>
+                                <p>491K theo dõi</p>
+                            </div>
+                            <div class="similarArtist-followBtn">
+                                <button class="btn-follow"><i class="fas fa-user-plus"></i>Theo dõi</button>
+                                <!-- <button class="btn-following"><i class="fas fa-user-check"></i>Đang theo dõi</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="similarArtist">
+                    <div class="card similarArtist">
+                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/5/c/515c86b8f10cd8e44fa77f195d0c286f.jpg" id="artist" width="255px" height="255px">
+                        <div class="card-body similarArtist">
+                            <div class="similarArtist-info">
+                                <strong>Jack</strong>
+                                <p>414K theo dõi</p>
+                            </div>
+                            <div class="similarArtist-followBtn">
+                                <button class="btn-follow"><i class="fas fa-user-plus"></i>Theo dõi</button>
+                                <!-- <button class="btn-following"><i class="fas fa-user-check"></i>Đang theo dõi</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="similarArtist">
+                    <div class="card similarArtist">
+                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/1/1/2/e1120261421cfec7513423222b0ca94c.jpg" id="artist" width="255px" height="255px">
+                        <div class="card-body similarArtist">
+                            <div class="similarArtist-info">
+                                <strong>Mr.Siro</strong>
+                                <p>302K theo dõi</p>
+                            </div>
+                            <div class="similarArtist-followBtn">
+                                <button class="btn-follow"><i class="fas fa-user-plus"></i>Theo dõi</button>
+                                <!-- <button class="btn-following"><i class="fas fa-user-check"></i>Đang theo dõi</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="similarArtist">
+                    <div class="card similarArtist">
+                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/c/5/a/7c5a9d0ec012cb842476b83dbbc96e84.jpg" id="artist" width="255px" height="255px">
+                        <div class="card-body similarArtist">
+                            <div class="similarArtist-info">
+                                <strong>ERIK</strong>
+                                <p>160K theo dõi</p>
+                            </div>
+                            <div class="similarArtist-followBtn">
+                                <button class="btn-follow"><i class="fas fa-user-plus"></i>Theo dõi</button>
+                                <!-- <button class="btn-following"><i class="fas fa-user-check"></i>Đang theo dõi</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="similarArtist">
+                    <div class="card similarArtist">
+                        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/f/b/f/cfbfd373b7cf83c5539c2387c009229d.jpg" id="artist" width="255px" height="255px">
+                        <div class="card-body similarArtist">
+                            <div class="similarArtist-info">
+                                <strong>Đức Phúc</strong>
+                                <p>130K theo dõi</p>
+                            </div>
+                            <div class="similarArtist-followBtn">
+                                <button class="btn-follow"><i class="fas fa-user-plus"></i>Theo dõi</button>
+                                <!-- <button class="btn-following"><i class="fas fa-user-check"></i>Đang theo dõi</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick--prevArtist"><i class="fa fa-angle-left " aria-hidden="true "></i></div>
+            <div class="slick--nextArtist"><i class="fa fa-angle-right " aria-hidden="true "></i></div>
+        </div>
+    </div>
+    <!-- Script playlist -->
+    <script>
+        $(document).ready(function() {
+            $('.slide-artist').slick({
+                autoplaySpeed: 3000,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false
+            });
+        });
+        // Slick btn
+        $(document).ready(function() {
+            $('.slick--prevArtist').css({
+                "color": "#efefef",
+                "pointer-events": "none"
+            })
+            $('.slick--prevArtist').on('click', function() {
+                $('.slide-artist').slick('slickPrev');
+                $('.slick--prevArtist').css({
+                    "color": "#efefef",
+                    "pointer-events": "none"
+                })
+                $('.slick--nextArtist').css({
+                    "color": "black",
+                    "pointer-events": "all"
+                })
+            })
+            $('.slick--nextArtist').on('click', function() {
+                $('.slide-artist').slick('slickNext');
+                $('.slick--nextArtist').css({
+                    "color": "#efefef",
+                    "pointer-events": "none"
+                })
+                $('.slick--prevArtist').css({
+                    "color": "black",
+                    "pointer-events": "all"
+                })
+            })
+        });
+        // Follow btn
+        let followIcon = document.querySelectorAll(".fas.fa-user-plus");
+        let followBtn = document.querySelectorAll(".btn-follow").forEach(follows => {
+                follows.addEventListener("click", (event) => {
+                    if (follows.className == "btn-follow") {
+                        follows.className = "btn-following";
+                        follows.innerHTML = "<i class='fas fa-user-check'></i>" + " " + "Đang theo dõi";
+                    } else {
+                        follows.className = "btn-follow";
+                        follows.innerHTML = "<i class='fas fa-user-plus'></i>" + "Theo dõi";
+                    }
+                })
+            })
+            // Play btn
+        let playMusic = document.getElementById("sounds");
+        let back = document.querySelectorAll("#playlistItemIMG");
+        let playBtn = document.querySelectorAll(".fas.fa-play").forEach(PLAY => {
+            PLAY.addEventListener("click", (event) => {
+                if (PLAY.className == "fas fa-play") {
+                    PLAY.className = "fas fa-pause";
+                    playMusic.play();
+                    back.forEach(backImg => {
+                        // event.target.classList.contains("fas fa-pause");
+                        // selectedIMG.style.filter = "brightness(50%)";
+                        // backImg.style.position = "relative";
+                        // backImg.style.top = "0px";
+                    })
+                } else {
+                    PLAY.className = "fas fa-play";
+                    playMusic.pause();
+                    back.forEach(backImg => {
+                        // backImg.style.position = "relative";
+                        // backImg.style.top = "0px";
+                    })
+                }
+            })
+
+        });
+        // Heart
+        let hiddenSpan = document.querySelectorAll(".tooltipText-heart");
+        let heartSelect = document.querySelectorAll(".far").forEach(heart => {
+            heart.addEventListener("click", () => {
+                if (heart.className == "far fa-heart") {
+                    heart.className = "fa fa-heart";
+                    heart.style.color = "rgb(255, 159, 103)";
+                    hiddenSpan.forEach(span => {
+                        span.style.display = "none";
+                    });
+                } else {
+                    heart.className = "far fa-heart";
+                    heart.style.color = "#999999";
+                    hiddenSpan.forEach(span => {
+                        span.style.display = "none";
+                    });
+                }
+            })
+            heart.addEventListener("mouseover", () => {
+                hiddenSpan.forEach(span => {
+                    span.style.display = "block";
+                });
+            })
+        });
+    </script>
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+</body>
+
+</html>

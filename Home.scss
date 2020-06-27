@@ -1,0 +1,416 @@
+$primaryColor: rgb(255, 159, 103);
+$greyColor: #999;
+$grayColor: #999999;
+$primaryGreyColor: #a0a0a0;
+$paleGreyColor: #dedcdc;
+$borderColor: #efefef;
+$blackColor: #333333;
+$backGroundColor: rgb(252, 252, 252);
+$primaryBlackColor: #32323d;
+$whiteColor: #ffffff;
+$redColor: #db1d1d;
+$blueColor: #1237de;
+$greenColor: #4fb809;
+$fontFamily: Roboto sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontFamily;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+#nav_trangChu {
+    color: $primaryColor;
+}
+
+.container.slide {
+    margin-top: 0px;
+    // margin-bottom: -10px;
+}
+
+.slick-dots {
+    position: relative;
+    top: 260px;
+}
+
+canvas {
+    // background: url('https://zjs.zadn.vn/zmp3-desktop/releases/v0.1.5/images/bg-chart.jpg');
+    background: linear-gradient(180deg, $primaryColor 0%, #1f1da7 100%);
+}
+
+.listItem__playCount::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+    left: -60px;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+DQogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjAuMyAoNzg5MSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+DQogICAgPHRpdGxlPnN0YXRzX3BsYXkgNDwvdGl0bGU+DQogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+DQogICAgPGRlZnMvPg0KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPg0KICAgICAgICA8ZyBpZD0ic3RhdHNfcGxheS0iIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIGZpbGw9InJnYigxNTMsIDE1MywgMTUzKSI+DQogICAgICAgICAgICA8cGF0aCBkPSJNNCwxMyBMNCwzIEwxMyw4IEw0LDEzIFoiIGlkPSJzdGF0c19wbGF5LTMiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg0K');
+}
+
+.BXH__list {
+    // background: linear-gradient(135deg, rgb(126, 125, 124) 0%, rgb(126, 125, 124) 100%);
+    &:hover {
+        .list.list-unstyled::-webkit-scrollbar {
+            display: block;
+        }
+        .listItem__additional {
+            span {
+                margin-right: -12px;
+            }
+        }
+    }
+    margin-top: 40px;
+    .list.list-unstyled {
+        overflow: auto;
+        overflow-x: hidden;
+        height: 300px;
+        &::-webkit-scrollbar {
+            display: none;
+            margin-left: 0;
+            width: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, .3);
+            border-radius: 50px;
+            border: 1px solid $borderColor;
+        }
+    }
+}
+
+.list__item {
+    margin-bottom: 10px;
+}
+
+.listItem__main {
+    .listItem__number {
+        font-size: 20px;
+        color: $grayColor;
+    }
+    .listItem__img {
+        padding-left: 15px;
+    }
+    .listItem__content {
+        padding-left: 15px;
+        span {
+            color: $grayColor;
+        }
+        strong {
+            color: $primaryBlackColor;
+            font-weight: 500;
+        }
+    }
+}
+
+.listItem__additional {
+    span {
+        color: $greyColor;
+        font-size: 12px;
+    }
+}
+
+.listDeXuat__item {
+    margin-bottom: 10.5px;
+    border-bottom: 1px solid $borderColor;
+    padding-bottom: 10px;
+    .listDeXuat__content {
+        display: flex;
+        .listDeXuat__songImg {
+            margin-right: 10px;
+            &:hover {
+                img {
+                    filter: brightness(50%);
+                }
+                .fas.fa-play,
+                .fas.fa-pause {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            img {
+                border-radius: 50%;
+            }
+            .fas.fa-play {
+                display: none;
+                position: absolute;
+                left: 35px;
+                top: 18px;
+                color: white;
+            }
+            .fas.fa-pause {
+                @extend .fas.fa-play;
+                display: block;
+            }
+        }
+        .listDeXuat__songName {
+            strong {
+                color: $primaryBlackColor;
+                font-weight: 640;
+            }
+            span {
+                color: $primaryGreyColor;
+            }
+        }
+        .listDeXuat__heart {
+            line-height: 50px;
+            position: absolute;
+            right: 65px;
+            color: $grayColor;
+            height: 16px;
+            // z-index: -1;
+            &:hover {
+                cursor: pointer;
+                span {
+                    visibility: visible;
+                }
+                i {
+                    background-color: $borderColor;
+                    padding: 8px;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -8px;
+                    top: 9px;
+                }
+            }
+            span {
+                visibility: hidden;
+                width: 130px;
+                height: 30px;
+                line-height: 30px;
+                background-color: $primaryBlackColor;
+                color: white;
+                font-size: 12px;
+                text-align: center;
+                border-radius: 5px;
+                padding: 0px 10px;
+                position: absolute;
+                z-index: 2;
+                bottom: 90%;
+                left: 50%;
+                margin-left: -73px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid $primaryBlackColor;
+                }
+            }
+        }
+        .listDeXuat__ellipsis {
+            @extend .listDeXuat__heart;
+            right: 30px;
+            span {
+                width: 50px;
+                margin-left: -33px;
+            }
+        }
+    }
+}
+
+.container.theLoai {
+    margin-top: 10px;
+    h2 {
+        color: $primaryBlackColor;
+    }
+    .topSangTac,
+    .baiHatMoi {
+        margin-top: -50px;
+    }
+}
+
+.slick--prevCover,
+.slick--prevSangTac,
+.slick--prevBaiHatMoi {
+    position: relative;
+    left: 94%;
+    top: -237px;
+    font-size: 25.99px;
+    width: 16px;
+    &:hover {
+        color: $primaryColor;
+        cursor: pointer;
+    }
+}
+
+.slick--nextCover,
+.slick--nextSangTac,
+.slick--nextBaiHatMoi {
+    position: relative;
+    left: 96.9%;
+    top: -275px;
+    font-size: 25.99px;
+    width: 16px;
+    &:hover {
+        color: $primaryColor;
+        cursor: pointer;
+    }
+}
+
+h2 {
+    font-weight: 1000;
+}
+
+.topCover {
+    h2 {
+        font-weight: 700;
+    }
+    .playlist-link {
+        height: 17px;
+        &:focus {
+            outline: none;
+        }
+    }
+    .fas.fa-play {
+        display: none;
+        font-size: 30px;
+    }
+    .far.fa-heart,
+    .fas.fa-ellipsis-h,
+    .fa.fa-heart.theLoai {
+        display: none;
+        font-size: 18px;
+    }
+    .heart-album {
+        &:hover {
+            span {
+                visibility: visible;
+            }
+        }
+        span {
+            visibility: hidden;
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            background-color: $primaryBlackColor;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 0px 10px;
+            position: absolute;
+            z-index: 10;
+            bottom: 64%;
+            left: 0%;
+            margin-left: -21px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid $primaryBlackColor;
+            }
+        }
+    }
+    .ellipsis-album {
+        @extend .heart-album;
+        span {
+            width: 50px;
+            position: absolute;
+            left: 0%;
+            margin-left: 128px;
+        }
+    }
+    .slide__img00,
+    .slide__img01,
+    .slide__img02,
+    .slide__img03,
+    .slide__img04,
+    .slide__img05,
+    .slide__img06,
+    .slide__img07,
+    .slide__img08,
+    .slide__img09 {
+        height: 190px;
+        width: 199.8px;
+        &:hover {
+            cursor: pointer;
+            img {
+                filter: brightness(50%);
+            }
+            .fas.fa-play,
+            .far.fa-heart,
+            .fas.fa-ellipsis-h,
+            .fa.fa-heart.theLoai {
+                display: block;
+                color: white;
+                cursor: pointer;
+            }
+            .topSangTac {
+                transform: translateY(0px);
+            }
+        }
+    }
+    img {
+        border-radius: 7px;
+    }
+}
+
+.topSangTac {
+    @extend .topCover;
+}
+
+.baiHatMoi {
+    @extend .topCover;
+}
+
+.container-fluid {
+    background-color: black;
+    .container.Ft {
+        font-weight: 600;
+        .logo.m-0 {
+            margin-left: 0px;
+            position: relative;
+            top: -32px;
+        }
+        a {
+            color: white;
+            &:hover {
+                text-decoration: none;
+                color: $primaryColor;
+            }
+        }
+        .congTy__item,
+        .congDong__item,
+        .lienKet__item {
+            p {
+                font-weight: 700;
+                color: $grayColor;
+            }
+        }
+        .link-item {
+            font-size: 12px;
+        }
+        .country {
+            a {
+                font-size: 12px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .socialMedia {
+        i {
+            color: $whiteColor;
+            font-size: 44px;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+}

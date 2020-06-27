@@ -1,0 +1,340 @@
+/* Header */
+
+#nav_congDong {
+    color: #ff9f67;
+}
+
+
+/* ----Post------ */
+
+.container-main {
+    width: 1110px;
+    margin: auto;
+}
+
+.post-music {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
+    border-radius: 8px;
+    margin-left: 305px;
+}
+
+.post-video {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
+    border-radius: 8px;
+    margin-left: 305px;
+}
+
+.post_head {
+    display: flex;
+}
+
+.Avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ArtNamee {
+    color: black;
+}
+
+.Timepost {
+    font-size: 10px;
+}
+
+.MoreOption {
+    display: flex;
+    margin-left: 340px;
+}
+
+.Caption__body {
+    width: 85%;
+    height: 12%;
+}
+
+.Music {
+    width: 100%;
+    height: 57%;
+    background-color: #000000cb;
+}
+
+.Video {
+    width: 100%;
+    height: 65%;
+    background-color: #000000cb;
+}
+
+.background-img {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 33.33%;
+    height: 165px;
+    filter: blur(2px);
+}
+
+
+/* music */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.music-player {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.titre {
+    position: absolute;
+    float: left;
+    margin-top: 2%;
+    width: 100%;
+    z-index: 2;
+}
+
+.lecteur {
+    width: 100%;
+    display: block;
+    margin-top: 12%;
+    height: auto;
+    position: relative;
+    float: left;
+    z-index: 10;
+}
+
+.mejs__button>button:focus {
+    outline: 0px dotted #999;
+}
+
+.mejs__container {
+    position: relative;
+    background-color: transparent;
+    min-width: auto !important;
+}
+
+.mejs__controls {
+    padding: 0 10%;
+    background: transparent !important;
+    display: block;
+    position: relative;
+}
+
+.mejs__controls div {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.mejs__controls .mejs__playpause-button {
+    position: absolute !important;
+    right: 8%;
+    bottom: 95%;
+    width: 40px;
+}
+
+.mejs__controls .mejs__playpause-button button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    font-family: FontAwesome;
+    font-size: 23px;
+    color: #ffa047;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.mejs__controls .mejs__play button:before {
+    content: "\f04b";
+}
+
+.mejs__controls .mejs__pause button:before {
+    content: "\f04c";
+}
+
+.mejs__controls .mejs__volume-button button {
+    display: block;
+    width: 40px;
+    padding: 0;
+    border: 0;
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #ffa047;
+    background: transparent;
+    margin: 0;
+}
+
+.mejs__controls .mejs__mute button:before {
+    content: "\f028";
+}
+
+.mejs__controls .mejs__unmute button:before {
+    content: "\f026";
+}
+
+.mejs__controls .mejs__time {
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    color: #fff;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    min-width: 100%;
+}
+
+.mejs__controls .mejs__time span {
+    font-size: 15px;
+}
+
+.mejs__controls span.mejs__duration {
+    float: right;
+    text-align: right;
+    color: #ccc;
+}
+
+.mejs__controls span.mejs__currenttime {
+    font-weight: 700;
+    float: left;
+}
+
+.mejs__controls .mejs__time-rail {
+    width: 100%;
+    margin: 0;
+}
+
+.mejs__controls .mejs__time-rail span {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-loaded {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-float {
+    display: none;
+    top: -40px;
+    width: 40px;
+    height: 25px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 10px;
+    background: #fff;
+    border: 0;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-float-current {
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 0;
+    line-height: 26px;
+    color: #100d28;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-float-corner {
+    top: auto;
+    bottom: -9px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #fff;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-current {
+    background: #ffa047 none repeat scroll 0 0;
+}
+
+.mejs__controls .mejs__time-handle {
+    display: none;
+}
+
+.mejs__controls .mejs__volume-button {
+    position: relative;
+    position: absolute !important;
+    top: 70px;
+    right: 25%;
+    width: 40px;
+    height: 40px;
+}
+
+.mejs__controls .mejs__horizontal-volume-slider {
+    display: block;
+    position: absolute !important;
+    position: relative;
+    top: 70px;
+    right: 10%;
+    width: 60px;
+    height: 4px;
+    margin-top: 18px;
+    border-radius: 50px;
+    line-height: 11px;
+}
+
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-total,
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
+    background: #fff;
+}
+
+.mejs__offscreen {
+    display: none;
+}
+
+
+/* ....................... */
+
+.post__Foot {
+    border-top: 1px solid #c0c0c0;
+    display: flex;
+}
+
+.reaction {
+    width: 33.33%;
+}
+
+.comment {
+    width: 33.33%;
+}
+
+.share {
+    width: 33.33%;
+}
+
+
+/* Footer */

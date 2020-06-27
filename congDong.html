@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/congDong.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+</head>
+<script>
+    $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#notify").load("notifications.html");
+    });
+</script>
+
+<body>
+    <div id="notify"></div>
+    <header id="header"></header>
+
+    <div class="container-main">
+        <div class="post-music">
+            <div class="post_head pt-2 ml-2">
+                <div class="Avatar">
+                    <a href="trangcanhan.html">
+                        <img class="Avatar" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="ArtName ml-2 ">
+                    <a class="ArtNamee text-decoration-none font-weight-bold" href="trangcanhan.html">Đức Huy</a>
+                    <br>
+                    <i class="fas fa-globe-asia text-muted"></i> <a class="Timepost font-weight-normal text-muted" href="#">1 ngày</a>
+                </div>
+                <div class="MoreOption">
+                    <span><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="Caption__body">
+                <div class="Caption ml-3 pt-1">
+                    Mình mới cover bài hát, các bạn cùng nghe nhé!
+                </div>
+            </div>
+            <div class="Music">
+                <div class="music-player">
+                    <div class="background-img">
+                        <img class="background-img" src="image/ava.jpg" alt="">
+                    </div>
+                    <div class="titre">
+                        <h4 class="text-muted pl-5">Đức Huy</h4>
+                        <h3 class="text-white pl-5">Từ chối nhẹ nhàng thôi</h3>
+                    </div>
+                    <div class="lecteur">
+                        <audio style="width: 100%;" class="fc-media">
+							<source src="sounds/từ chối nhẹ nhàng thôi.mp3" type="audio/mp3"/>
+						</audio>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <script>
+                var audio = {
+                    init: function() {
+                        var $that = this;
+                        $(function() {
+                            $that.components.media();
+                        });
+                    },
+                    components: {
+                        media: function(target) {
+                            var media = $('audio.fc-media', (target !== undefined) ? target : 'body');
+                            if (media.length) {
+                                media.mediaelementplayer({
+                                    audioHeight: 40,
+                                    features: ['playpause', 'current', 'duration', 'progress', 'volume', 'tracks', 'fullscreen'],
+                                    alwaysShowControls: true,
+                                    timeAndDurationSeparator: '<span></span>',
+                                    iPadUseNativeControls: true,
+                                    iPhoneUseNativeControls: true,
+                                    AndroidUseNativeControls: true
+                                });
+                            }
+                        },
+
+                    },
+                };
+                audio.init();
+            </script>
+            <!--  -->
+            <div class="post__Foot ">
+                <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
+                    <a class="text-muted text-decoration-none" href="">Thích</a>
+                </div>
+                <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
+                    <a class="text-muted text-decoration-none" href="">Bình Luận</a>
+                </div>
+                <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
+                    <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-music">
+            <div class="post_head pt-2 ml-2">
+                <div class="Avatar">
+                    <a href="trangcanhan.html">
+                        <img class="Avatar" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="ArtName ml-2 ">
+                    <a class="ArtNamee text-decoration-none font-weight-bold" href="trangcanhan.html">Đức Huy</a>
+                    <br>
+                    <i class="fas fa-globe-asia text-muted"></i> <a class="Timepost font-weight-normal text-muted" href="#">2 ngày</a>
+                </div>
+                <div class="MoreOption">
+                    <span><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="Caption__body">
+                <div class="Caption ml-3 pt-1">
+                    Mình mới cover bài hát, các bạn cùng nghe nhé!
+                </div>
+            </div>
+            <div class="Music">
+                <div class="music-player">
+                    <div class="background-img">
+                        <img class="background-img" src="image/ava.jpg" alt="">
+                    </div>
+                    <div class="titre">
+                        <h4 class="text-muted pl-5">Đức Huy</h4>
+                        <h3 class="text-white pl-5">Từ chối nhẹ nhàng thôi</h3>
+                    </div>
+                    <div class="lecteur">
+                        <audio style="width: 100%;" class="fc-media">
+						<source src="sounds/từ chối nhẹ nhàng thôi.mp3" type="audio/mp3"/>
+					</audio>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="post__Foot ">
+                <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
+                    <a class="text-muted text-decoration-none" href="">Thích</a>
+                </div>
+                <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
+                    <a class="text-muted text-decoration-none" href="">Bình Luận</a>
+                </div>
+                <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
+                    <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-music">
+            <div class="post_head pt-2 ml-2">
+                <div class="Avatar">
+                    <a href="trangcanhan.html">
+                        <img class="Avatar" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="ArtName ml-2 ">
+                    <a class="ArtNamee text-decoration-none font-weight-bold" href="trangcanhan.html">Đức Huy</a>
+                    <br>
+                    <i class="fas fa-globe-asia text-muted"></i> <a class="Timepost font-weight-normal text-muted" href="#">3 ngày</a>
+                </div>
+                <div class="MoreOption">
+                    <span><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="Caption__body">
+                <div class="Caption ml-3 pt-1">
+                    Mình mới cover bài hát, các bạn cùng nghe nhé!
+                </div>
+            </div>
+            <div class="Music">
+                <div class="music-player">
+                    <div class="background-img">
+                        <img class="background-img" src="image/ava.jpg" alt="">
+                    </div>
+                    <div class="titre">
+                        <h4 class="text-muted pl-5">Đức Huy</h4>
+                        <h3 class="text-white pl-5">Từ chối nhẹ nhàng thôi</h3>
+                    </div>
+                    <div class="lecteur">
+                        <audio style="width: 100%;" class="fc-media">
+					<source src="sounds/từ chối nhẹ nhàng thôi.mp3" type="audio/mp3"/>
+				</audio>
+                    </div>
+                </div>
+            </div>
+            <div class="post__Foot ">
+                <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
+                    <a class="text-muted text-decoration-none" href="">Thích</a>
+                </div>
+                <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
+                    <a class="text-muted text-decoration-none" href="">Bình Luận</a>
+                </div>
+                <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
+                    <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-video">
+            <div class="post_head pt-2 ml-2">
+                <div class="Avatar">
+                    <a href="trangcanhan.html">
+                        <img class="Avatar" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="ArtName ml-2 ">
+                    <a class="ArtNamee text-decoration-none font-weight-bold" href="#">Đức Huy</a>
+                    <br>
+                    <i class="fas fa-globe-asia text-muted"></i> <a class="Timepost font-weight-normal text-muted" href="#">4 ngày</a>
+                </div>
+                <div class="MoreOption">
+                    <span><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="Caption__body">
+                <div class="Caption ml-3 pt-2">
+                    Chilling Time !!!
+                </div>
+            </div>
+            <div class="Video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9lwYQO5BDM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--  -->
+            <div class="post__Foot ">
+                <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
+                    <a class="heart text-muted text-decoration-none" href="">Thích</a>
+                </div>
+                <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
+                    <a class="text-muted text-decoration-none" href="">Bình Luận</a>
+                </div>
+                <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
+                    <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-video">
+            <div class="post_head pt-2 ml-2">
+                <div class="Avatar">
+                    <a href="trangcanhan.html">
+                        <img class="Avatar" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="ArtName ml-2 ">
+                    <a class="ArtNamee text-decoration-none font-weight-bold" href="#">Đức Huy</a>
+                    <br>
+                    <i class="fas fa-globe-asia text-muted"></i> <a class="Timepost font-weight-normal text-muted" href="#">5 ngày</a>
+                </div>
+                <div class="MoreOption">
+                    <span><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="Caption__body">
+                <div class="Caption ml-3 pt-2">
+                    Chilling Time !!!
+                </div>
+            </div>
+            <div class="Video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9lwYQO5BDM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--  -->
+            <div class="post__Foot ">
+                <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
+                    <a class="heart text-muted text-decoration-none" href="">Thích</a>
+                </div>
+                <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
+                    <a class="text-muted text-decoration-none" href="">Bình Luận</a>
+                </div>
+                <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
+                    <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-video">
+            <div class="post_head pt-2 ml-2">
+                <div class="Avatar">
+                    <a href="trangcanhan.html">
+                        <img class="Avatar" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="ArtName ml-2 ">
+                    <a class="ArtNamee text-decoration-none font-weight-bold" href="#">Đức Huy</a>
+                    <br>
+                    <i class="fas fa-globe-asia text-muted"></i> <a class="Timepost font-weight-normal text-muted" href="#">6 ngày</a>
+                </div>
+                <div class="MoreOption">
+                    <span><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="Caption__body">
+                <div class="Caption ml-3 pt-2">
+                    Chilling Time !!!
+                </div>
+            </div>
+            <div class="Video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9lwYQO5BDM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--  -->
+            <div class="post__Foot ">
+                <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
+                    <a class="heart text-muted text-decoration-none" href="">Thích</a>
+                </div>
+                <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
+                    <a class="text-muted text-decoration-none" href="">Bình Luận</a>
+                </div>
+                <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
+                    <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+<script>
+    let heartSelect = document.querySelectorAll(".far").forEach(heart => {
+        heart.addEventListener("click", () => {
+            if (heart.className == "far fa-heart") {
+                heart.className = "fa fa-heart";
+                heart.style.color = "rgb(255, 159, 103)";
+                hiddenSpan.forEach(span => {
+                    // let compStyles = window.getComputedStyle(span);
+                    // compStyles.getPropertyValue("visibility");
+                    span.style.display = "none";
+                });
+            } else {
+                heart.className = "far fa-heart";
+                heart.style.color = "#999999";
+                hiddenSpan.forEach(span => {
+                    span.style.display = "none";
+                });
+            }
+        })
+    });
+</script>
+
+</html>
