@@ -60,23 +60,21 @@
                         <button id="btn-more"><i class="fas fa-ellipsis-h"></i></button>
                         <script>
                             $(document).ready(function() {
+                                var a = "1,811"
+                                var b = "1,810"
                                 $("#btn-follow").click(
-                                    function() {
-                                        $("#btn-following").css({
-                                            "display": "block"
-                                        });
-                                        $("#btn-share").css({
-                                            "margin-left": "50px"
-                                        });
+                                    function()
+                                    {
+                                        $("#btn-following").css({"display":"block"}),
+                                        $("#btn-share").css({"margin-left":"50px"}),
+                                        $('#followers').html(a);
                                     });
                                 $("#btn-following").click(
-                                    function() {
-                                        $("#btn-following").css({
-                                            "display": "none"
-                                        });
-                                        $("#btn-share").css({
-                                            "margin-left": "0"
-                                        });
+                                    function() 
+                                    {
+                                        $("#btn-following").css({"display":"none"}),
+                                        $("#btn-share").css({"margin-left":"0"}),
+                                        $('#followers').html(b);
                                     });
                             });
                         </script>
@@ -85,7 +83,7 @@
                         <div class="followers">
                             <span style="font-size: 14px;">Người theo dõi</span>
                             <br>
-                            <span style="font-size: 25px;">1,810</span>
+                            <span id="followers" style="font-size: 25px;">1,810</span>
                         </div>
                         <div class="following">
                             <span style="font-size: 14px;">Đang theo dõi</span>
@@ -95,13 +93,13 @@
                         <div class="tracks">
                             <span style="font-size: 14px;">Bài hát</span>
                             <br>
-                            <span style="font-size: 25px;">35</span>
+                            <span style="font-size: 25px;">7</span>
                         </div>
                     </div>
                     <div class="likes__list">
                         <div class="likes__list__head">
-                            <span style="color: rgba(167, 167, 167, 0.829); font-size: 17px;"><i class="fas fa-heart"></i> 36 Thích</span>
-                            <span class="seeall" style="color: rgba(167, 167, 167, 0.829); font-size: 17px;"><a href="" style="color: rgba(167, 167, 167, 0.829);">Xem tất cả</a></span>
+                            <span style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><i class="fas fa-heart"></i> 36 Thích</span>
+                            <span class="seeall" style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><a href="" style="color: rgba(167, 167, 167, 0.829);">Xem tất cả</a></span>
                         </div>
                         <div class="likes__list__body">
                             <ul class="listDeXuat list-unstyled">
@@ -117,8 +115,13 @@
                                             <i class="fas fa-play"></i>
                                         </div>
                                         <div class="listDeXuat__songName">
-                                            <strong>Hồng Nhan</strong> <br>
+                                            <strong>Hồng Nhan</strong>
+                                            <span>-</span>
                                             <span>Jack</span>
+                                            <br>
+                                            <span><i class="fas fa-play"></i> 26.2K</span>
+                                            <span><i class="fas fa-heart"></i> 325</span>
+                                            <span><i class="fas fa-comment-alt"></i> 124</span>
                                         </div>
                                         <div class="listDeXuat__heart">
                                             <i class="far fa-heart"></i>
@@ -136,11 +139,16 @@
                                             <a href="#" class="listDeXuat__songLink">
                                                 <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/2/d/dd2d12b5e9917b0136cc77b9623b47d9.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                             </a>
-                                            <i class="fas fa-play" style="position: absolute; top: 275px;"></i>
+                                            <i class="fas fa-play" style="position: absolute; top: 273px;"></i>
                                         </div>
                                         <div class="listDeXuat__songName">
-                                            <strong>Em Đã Thấy Anh Cùng Người Ấy</strong> <br>
+                                            <strong>#EDTACNA</strong>
+                                            <span>-</span>
                                             <span>Hương Giang</span>
+                                            <br>
+                                            <span><i class="fas fa-play"></i> 22.2K</span>
+                                            <span><i class="fas fa-heart"></i> 320</span>
+                                            <span><i class="fas fa-comment-alt"></i> 88</span>
                                         </div>
                                         <div class="listDeXuat__heart">
                                             <i class="far fa-heart"></i>
@@ -158,11 +166,16 @@
                                             <a href="#" class="listDeXuat__songLink">
                                                 <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/f/8/0/7f80e3cef3f5afb3ae28b8a6bc3b0bef.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
                                             </a>
-                                            <i class="fas fa-play" style="position: absolute; top: 350px;"></i>
+                                            <i class="fas fa-play" style="position: absolute; top: 338px;"></i>
                                         </div>
                                         <div class="listDeXuat__songName">
-                                            <strong>Người Ta Hỏi Anh</strong> <br>
+                                            <strong>Người Ta Hỏi Anh</strong>
+                                            <span>-</span>
                                             <span>Nhật Tinh Anh</span>
+                                            <br>
+                                            <span><i class="fas fa-play"></i> 18.2K</span>
+                                            <span><i class="fas fa-heart"></i> 150</span>
+                                            <span><i class="fas fa-comment-alt"></i> 52</span>
                                         </div>
                                         <div class="listDeXuat__heart">
                                             <i class="far fa-heart"></i>
@@ -224,6 +237,137 @@
                                 // BXH 
                                 // let scrollBar = document.querySelector("")
                             </script>
+                        </div>
+                    </div>
+                    <div class="Fanalsolikes__list">
+                        <div class="Fanalsolikes__list__head">
+                        <span style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><i class="fas fa-user-friends"></i> Fan cũng thích</span>
+                        <span class="refresh" style="color: rgba(167, 167, 167, 0.829); font-size: 16px;"><a href="" style="color: rgba(167, 167, 167, 0.829);">Làm mới</a></span>                   
+                        </div>
+                        <div class="Fanalsolikes__list__body">
+                            <ul class="list__Fanalsolikes list-unstyled">
+                                <li class="list__Fanalsolikes__item">
+                                    <div class="list__Fanalsolikes__content">
+                                        <div class="list__Fanalsolikes__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/2/7/f/327f68099674128289ba8a2e98232d68.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                        </div>
+                                        <div class="list__Fanalsolikes__songName">
+                                            <strong>Jack</strong>
+                                            <br>
+                                            <span><i class="fas fa-user-friends"></i> 1542</span>
+                                        </div>
+                                        <div class="list__Fanalsolikes__follow">
+                                            <button id="btn-fl">
+                                                <i class="fas fa-user-plus"></i>
+                                                Theo dõi
+                                            </button>
+                                        </div>
+                                        <div class="list__Fanalsolikes__following">
+                                            <button id="btn-flw">
+                                                <i class="fas fa-user-check"></i>
+                                                Đã theo dõi
+                                            </button>
+                                        </div>
+                                        <script>
+                                            $(document).ready(function(){
+                                              $("#btn-fl").click(
+                                                function(){
+                                                    $("#btn-flw").css({"display":"block"}),
+                                                    $("#btn-fl").css({"display":"none"}); 
+                                            });       
+                                              $("#btn-flw").click(
+                                                function(){
+                                                    $("#btn-flw").css({"display":"none"}),
+                                                    $("#btn-fl").css({"display":"block"});    
+                                            });
+                                          });
+                                        </script>
+                                    </div>
+                                </li>
+                                <li class="list__Fanalsolikes__item">
+                                    <div class="list__Fanalsolikes__content">
+                                        <div class="list__Fanalsolikes__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/2/d/dd2d12b5e9917b0136cc77b9623b47d9.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                        </div>
+                                        <div class="list__Fanalsolikes__songName">
+                                            <strong>Jack</strong>
+                                            <br>
+                                            <span><i class="fas fa-user-friends"></i> 1542</span>
+                                        </div>
+                                        <div class="list__Fanalsolikes__follow">
+                                            <button id="btn-fla">
+                                                <i class="fas fa-user-plus"></i>
+                                                Theo dõi
+                                            </button>
+                                        </div>
+                                        <div class="list__Fanalsolikes__following">
+                                            <button id="btn-flwa">
+                                                <i class="fas fa-user-check"></i>
+                                                Đã theo dõi
+                                            </button>
+                                        </div>
+                                        <script>
+                                            $(document).ready(function(){
+                                              $("#btn-fla").click(
+                                                function(){
+                                                    $("#btn-flwa").css({"display":"block"}),
+                                                    $("#btn-fla").css({"display":"none"}); 
+                                            });       
+                                              $("#btn-flwa").click(
+                                                function(){
+                                                    $("#btn-flwa").css({"display":"none"}),
+                                                    $("#btn-fla").css({"display":"block"});    
+                                            });
+                                          });
+                                        </script>
+                                    </div>
+                                </li>
+                                <li class="list__Fanalsolikes__item">
+                                    <div class="list__Fanalsolikes__content border-0">
+                                        <div class="list__Fanalsolikes__songImg">
+                                            <a href="#" class="listDeXuat__songLink">
+                                                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/f/8/0/7f80e3cef3f5afb3ae28b8a6bc3b0bef.jpg" id="songsDeXuat" alt="songIMG" width="50px" height="50px">
+                                            </a>
+                                        </div>
+                                        <div class="list__Fanalsolikes__songName">
+                                            <strong>Jack</strong>
+                                            <br>
+                                            <span><i class="fas fa-user-friends"></i> 1542</span>
+                                        </div>
+                                        <div class="list__Fanalsolikes__follow">
+                                            <button id="btn-flb">
+                                                <i class="fas fa-user-plus"></i>
+                                                Theo dõi
+                                            </button>
+                                        </div>
+                                        <div class="list__Fanalsolikes__following">
+                                            <button id="btn-flwb">
+                                                <i class="fas fa-user-check"></i>
+                                                Đã theo dõi
+                                            </button>
+                                        </div>
+                                        <script>
+                                            $(document).ready(function(){
+                                              $("#btn-flb").click(
+                                                function(){
+                                                    $("#btn-flwb").css({"display":"block"}),
+                                                    $("#btn-flb").css({"display":"none"}); 
+                                            });       
+                                              $("#btn-flwb").click(
+                                                function(){
+                                                    $("#btn-flwb").css({"display":"none"}),
+                                                    $("#btn-flb").css({"display":"block"});    
+                                            });
+                                          });
+                                        </script>
+                                    </div>
+                                </li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
